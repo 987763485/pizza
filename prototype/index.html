@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#FBFBFB" />
+  <meta name="application-name" content="Pizza" />
+  <meta name="apple-mobile-web-app-title" content="Pizza" />
+  <title>Pizza · 多智能体协作工作台</title>
+  <link rel="icon" href="./assets/app-icon.svg" type="image/svg+xml" />
+  <link rel="icon" href="./assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" />
+  <link rel="manifest" href="./site.webmanifest" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app" id="app">
+    <header class="titlebar">
+      <div class="titlebar-left">
+        <div class="window-dots" aria-hidden="true">
+          <span class="dot dot-close"></span>
+          <span class="dot dot-min"></span>
+          <span class="dot dot-max"></span>
+        </div>
+        <div class="titlebar-left-actions">
+          <button class="icon-btn" id="collapseBtn" title="折叠侧边栏" aria-label="折叠侧边栏"></button>
+          <button class="icon-btn" id="searchBtn" title="搜索会话 ⌘K" aria-label="搜索会话"></button>
+        </div>
+      </div>
+      <div class="titlebar-title" id="titlebarTitle">Pizza</div>
+      <div class="titlebar-actions">
+        <button class="icon-btn" id="themeBtn" title="切换主题" aria-label="切换主题"></button>
+      </div>
+    </header>
+
+    <div class="app-body">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand-row">
+          <a class="brand" href="#/home" aria-label="Pizza 首页">
+            <span class="brand-mark"></span>
+            <span class="brand-name">Pizza</span>
+          </a>
+        </div>
+
+        <button class="new-chat-btn" id="newChatBtn">
+          <span class="new-chat-icon" id="newChatIcon"></span>
+          <span>新建对话</span>
+          <kbd>⌘N</kbd>
+        </button>
+
+        <div class="workspace-section" id="workspaceSection"></div>
+
+        <nav class="side-scroll" id="sideScroll" aria-label="会话导航"></nav>
+
+        <div class="sidebar-footer" id="sidebarFooter"></div>
+      </aside>
+
+      <main class="main" id="main" tabindex="-1"></main>
+
+      <aside class="rightpanel" id="rightpanel" hidden aria-label="产出物与运行信息"></aside>
+    </div>
+  </div>
+
+  <div id="popover-root"></div>
+  <div id="overlay-root"></div>
+  <div id="toast-root" class="toast-root" aria-live="polite"></div>
+
+  <script src="./js/icons.js"></script>
+  <script src="./js/data.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
