@@ -1,0 +1,37 @@
+# 依赖
+node_modules/
+.pnpm-store/
+
+# 构建产物
+dist/
+build/
+out/
+.next/
+.turbo/
+*.tsbuildinfo
+coverage/
+
+# 运行时与本地数据
+.pizza/
+*.log
+*.pid
+
+# 环境变量
+.env
+.env.*
+!.env.example
+
+# 参考仓库（只读参考，不纳入 Pizza 版本管理）
+reference/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑器
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# 原型导出物
+prototype/screenshots/
