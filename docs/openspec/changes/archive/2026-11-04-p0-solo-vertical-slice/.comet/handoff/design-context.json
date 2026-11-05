@@ -1,0 +1,21 @@
+{
+  "change": "p0-solo-vertical-slice",
+  "phase": "design",
+  "mode": "compact",
+  "canonical_spec": "openspec",
+  "task_hash_policy": "task-content-v1",
+  "generated_by": "comet-handoff.sh",
+  "context_hash": "9cdf4e381084bae762431c3f872e14c1f05543acb3fa6e8f9ab991b37b41d98c",
+  "files": [
+    { "path": "docs/openspec/changes/p0-solo-vertical-slice/proposal.md", "sha256": "1e63aa89fcf6e1c29e29cf8bb7a98863a21cb726bcb0d2ce5825c96f71c85052" },
+    { "path": "docs/openspec/changes/p0-solo-vertical-slice/design.md", "sha256": "41596836521aced706ceae29e3cde497e453e141c4e8d5e3afa7acfc854d90d2" },
+    { "path": "docs/openspec/changes/p0-solo-vertical-slice/tasks.md", "sha256": "968f830bf2dcfd067354f36dd8660c9031e864e01e129350864044abcf98f3fd" },
+    { "path": "docs/openspec/changes/p0-solo-vertical-slice/.openspec.yaml", "sha256": "b6d27c089c6ee9596ce0433bd8f7f771b477758efe1ce7f7a7505af47316ecd0" },
+    { "path": "docs/openspec/changes/p0-solo-vertical-slice/specs/agent-profiles/spec.md", "sha256": "fcbbec6e56e8734492992fec9dbcd0513827178a38f6486c718f164341814f97" },
+    { "path": "docs/openspec/changes/p0-solo-vertical-slice/specs/local-workspace/spec.md", "sha256": "77017be76bc83fa4cf8666b27e543db9c32218206d153a1c7233236670f6677f" },
+    { "path": "docs/openspec/changes/p0-solo-vertical-slice/specs/runtime-connections/spec.md", "sha256": "1dad7cc975187a700b6a41c663fd65679b6be6b4edf2c15acaebb000428987a8" },
+    { "path": "docs/openspec/changes/p0-solo-vertical-slice/specs/session-library/spec.md", "sha256": "719c56e0d155d6b21471eb076645ee6484cf4fd5e8a11178ca318c0ec8c1e20d" },
+    { "path": "docs/openspec/changes/p0-solo-vertical-slice/specs/solo-conversations/spec.md", "sha256": "a7331144cb295c64fefc9c93eb0cac8c211c55598ca7ddca5c1e49962d16107e" },
+    { "path": "docs/openspec/changes/p0-solo-vertical-slice/specs/workspace-artifacts/spec.md", "sha256": "345954e52fb286363232ff4814121535ac8feb412733ce8f645c98a31ff4d657" }
+  ]
+}

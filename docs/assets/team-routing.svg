@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" fill="none">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#1d1d1f" flood-opacity="0.07"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M1 1L9 5L1 9" stroke="#8e8e93" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrowAccent" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M1 1L9 5L1 9" stroke="#d94f3d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="680" fill="#fbfbfc"/>
+  <text x="60" y="62" fill="#1d1d1f" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="-0.5">团队模式：@ 指挥路由</text>
+  <text x="60" y="92" fill="#6e6e73" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="14.5">指挥者是唯一调度中枢；每次 @ 只下发一个单轮任务，成员完成后把结果交回指挥者。</text>
+
+  <!-- User -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="160" width="190" height="86" rx="14" fill="#ffffff" stroke="#e3e3e8"/>
+    <circle cx="88" cy="190" r="11" fill="#f1efed"/>
+    <circle cx="88" cy="190" r="4" fill="#d94f3d"/>
+    <text x="108" y="196" fill="#1d1d1f" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="650">用户消息</text>
+    <text x="84" y="221" fill="#8e8e93" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="12">目标 · 约束 · 期望产出</text>
+  </g>
+
+  <!-- Leader -->
+  <g filter="url(#shadow)">
+    <rect x="410" y="140" width="320" height="132" rx="16" fill="#ffffff" stroke="#e3e3e8"/>
+    <rect x="410" y="140" width="320" height="6" rx="3" fill="#d94f3d"/>
+    <text x="438" y="181" fill="#1d1d1f" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="19" font-weight="700">指挥者 Agent</text>
+    <rect x="566" y="164" width="76" height="21" rx="10.5" fill="#fdf0ed"/>
+    <text x="604" y="179" text-anchor="middle" fill="#c84535" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-weight="600">唯一中枢</text>
+    <text x="438" y="212" fill="#3a3a3c" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="13">读取参与者能力目录，按任务匹配度选择成员</text>
+    <text x="438" y="238" fill="#8e8e93" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="12">名称 · 能力描述 · 团队职责 · 指令来源 · 运行状态</text>
+  </g>
+
+  <!-- Members group -->
+  <g filter="url(#shadow)">
+    <rect x="872" y="120" width="268" height="196" rx="16" fill="#ffffff" stroke="#e3e3e8"/>
+    <text x="896" y="151" fill="#1d1d1f" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="650">团队成员</text>
+    <text x="1100" y="151" text-anchor="end" fill="#8e8e93" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="11">按需参与</text>
+
+    <rect x="896" y="168" width="220" height="38" rx="9" fill="#f7f7f8"/>
+    <circle cx="914" cy="187" r="5" fill="#5b8def"/>
+    <text x="930" y="192" fill="#1d1d1f" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="550">产品经理</text>
+    <text x="1098" y="192" text-anchor="end" fill="#8e8e93" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="10.5">用户价值</text>
+
+    <rect x="896" y="212" width="220" height="38" rx="9" fill="#f7f7f8"/>
+    <circle cx="914" cy="231" r="5" fill="#2fb67c"/>
+    <text x="930" y="236" fill="#1d1d1f" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="550">架构师</text>
+    <text x="1098" y="236" text-anchor="end" fill="#8e8e93" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="10.5">技术成本</text>
+
+    <rect x="896" y="256" width="220" height="38" rx="9" fill="#f7f7f8"/>
+    <circle cx="914" cy="275" r="5" fill="#e0a12f"/>
+    <text x="930" y="280" fill="#1d1d1f" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="550">唱反调者</text>
+    <text x="1098" y="280" text-anchor="end" fill="#8e8e93" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="10.5">风险与反例</text>
+    <text x="896" y="307" fill="#9a9a9f" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="10.5">成员互相 @ 仅作为建议，不直接派发</text>
+  </g>
+
+  <!-- Summary -->
+  <g filter="url(#shadow)">
+    <rect x="410" y="386" width="320" height="118" rx="16" fill="#ffffff" stroke="#e3e3e8"/>
+    <text x="438" y="420" fill="#1d1d1f" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="650">指挥者收敛总结</text>
+    <text x="438" y="447" fill="#6e6e73" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="12.5">结论 · 关键依据 · 分歧与未决问题 · 建议下一步</text>
+    <text x="438" y="474" fill="#8e8e93" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="11.5">不再 @ 新成员时，回合自然结束</text>
+  </g>
+
+  <!-- Artifact -->
+  <g filter="url(#shadow)">
+    <rect x="872" y="404" width="268" height="88" rx="14" fill="#ffffff" stroke="#e3e3e8"/>
+    <rect x="896" y="428" width="26" height="32" rx="5" fill="#f1efed"/>
+    <path d="M902 436h14M902 442h14M902 448h9" stroke="#8e8e93" stroke-width="1.4" stroke-linecap="round"/>
+    <text x="936" y="438" fill="#1d1d1f" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600">工作区产出物</text>
+    <text x="936" y="459" fill="#8e8e93" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="11">.pizza/artifacts/team-turn-N.md</text>
+  </g>
+
+  <!-- Waiting user -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="386" width="220" height="104" rx="14" fill="#ffffff" stroke="#e3e3e8" stroke-dasharray="5 4"/>
+    <circle cx="86" cy="415" r="9" fill="#fdf0ed"/>
+    <path d="M82 415h8M86 411v8" stroke="#d94f3d" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="104" y="420" fill="#1d1d1f" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600">需要用户拍板</text>
+    <text x="84" y="449" fill="#6e6e73" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="11.5">指挥者 @我 提出一个具体问题</text>
+    <text x="84" y="470" fill="#8e8e93" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="11">回合进入 waiting_user</text>
+  </g>
+
+  <!-- Arrows -->
+  <path d="M250 203H402" stroke="#8e8e93" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <rect x="274" y="169" width="104" height="22" rx="11" fill="#fbfbfc"/>
+  <text x="326" y="185" text-anchor="middle" fill="#6e6e73" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="11">未 @：默认路由</text>
+
+  <path d="M730 200H864" stroke="#d94f3d" stroke-width="1.8" marker-end="url(#arrowAccent)"/>
+  <rect x="752" y="164" width="92" height="22" rx="11" fill="#fdf0ed"/>
+  <text x="798" y="180" text-anchor="middle" fill="#c84535" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-weight="600">@成员 · 单轮任务</text>
+
+  <path d="M1006 316C1006 356 758 360 730 282" stroke="#8e8e93" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <rect x="790" y="330" width="120" height="22" rx="11" fill="#fbfbfc"/>
+  <text x="850" y="346" text-anchor="middle" fill="#6e6e73" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="11">结果回到指挥者</text>
+
+  <path d="M570 272V378" stroke="#8e8e93" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <rect x="582" y="310" width="104" height="22" rx="11" fill="#fbfbfc"/>
+  <text x="634" y="326" text-anchor="middle" fill="#6e6e73" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="10.5">无更多匹配目标</text>
+
+  <path d="M730 445H864" stroke="#8e8e93" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <rect x="760" y="424" width="72" height="21" rx="10.5" fill="#fbfbfc"/>
+  <text x="796" y="439" text-anchor="middle" fill="#6e6e73" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="10.5">写入工作区</text>
+
+  <path d="M410 252C340 252 300 320 280 378" stroke="#d94f3d" stroke-width="1.4" stroke-dasharray="4 4" marker-end="url(#arrowAccent)"/>
+  <text x="302" y="304" text-anchor="middle" fill="#c84535" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="10.5">@我</text>
+
+  <text x="60" y="624" fill="#8e8e93" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="11.5">用户可以直接 @ 成员介入；成员之间的 @ 不产生新的运行，只作为建议回到指挥者。</text>
+  <text x="60" y="648" fill="#8e8e93" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro SC', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif" font-size="11.5">单回合跳数保护（默认 64）只用于防止 @ 循环失控，不决定成员参与轮次。</text>
+</svg>

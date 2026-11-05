@@ -1,0 +1,61 @@
+appId: com.pizza.workbench
+productName: Pizza
+copyright: Copyright © 2026 Pizza
+
+directories:
+  output: release
+  buildResources: resources
+
+files:
+  - out/**
+  - package.json
+  - node_modules/**
+
+extraResources:
+  - from: docs/THIRD-PARTY.md
+    to: THIRD-PARTY.md
+  - from: docs/USAGE.md
+    to: USAGE.md
+  - from: docs/RELEASE.md
+    to: RELEASE.md
+  - from: resources/icon.png
+    to: icon.png
+
+asar: true
+npmRebuild: false
+
+mac:
+  target:
+    - dmg
+    - zip
+  category: public.app-category.productivity
+  icon: icon.icns
+  identity: null
+  hardenedRuntime: false
+  gatekeeperAssess: false
+  minimumSystemVersion: '13.0'
+
+dmg:
+  title: Pizza
+
+win:
+  target:
+    - nsis
+    - zip
+  icon: resources/icon.png
+
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  artifactName: ${productName}-Setup-${version}.${ext}
+
+linux:
+  target:
+    - AppImage
+    - deb
+  category: Utility
+  icon: resources/icon.png
+  maintainer: Pizza
+  syncDesktopName: true
+  artifactName: ${productName}-${version}.${ext}
