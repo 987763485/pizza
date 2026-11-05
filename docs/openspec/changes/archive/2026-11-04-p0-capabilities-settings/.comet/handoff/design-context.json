@@ -1,0 +1,22 @@
+{
+  "change": "p0-capabilities-settings",
+  "phase": "design",
+  "mode": "compact",
+  "canonical_spec": "openspec",
+  "task_hash_policy": "task-content-v1",
+  "generated_by": "comet-handoff.sh",
+  "context_hash": "2e6602e59599a4ecbe81faaf67e3e6d12431049cf36e3dcf5b3e1bdba181f7ad",
+  "files": [
+    { "path": "docs/openspec/changes/p0-capabilities-settings/proposal.md", "sha256": "2db59147ca55e050bbfdc097ffe01a3dc8a8995eeafafa49920f1698d6082de7" },
+    { "path": "docs/openspec/changes/p0-capabilities-settings/design.md", "sha256": "3e87b77c81102b3dbedc7fb9fd5eb006ed4587e05b55e50419b5a932c9b1125f" },
+    { "path": "docs/openspec/changes/p0-capabilities-settings/tasks.md", "sha256": "b3b819d5839d07a8862ef061d27a0294eabc0e1f09d4ed12ee64a75f6eb80bfa" },
+    { "path": "docs/openspec/changes/p0-capabilities-settings/.openspec.yaml", "sha256": "b6d27c089c6ee9596ce0433bd8f7f771b477758efe1ce7f7a7505af47316ecd0" },
+    { "path": "docs/openspec/changes/p0-capabilities-settings/specs/appearance-localization/spec.md", "sha256": "d41a66f488f39a3444f6270913c50b11d5553bef73d42459197d0797794a535c" },
+    { "path": "docs/openspec/changes/p0-capabilities-settings/specs/desktop-distribution/spec.md", "sha256": "02d9bb4b5c16f6aa668ee66dde224b5258b792306191d20c6e4369e2dca09e08" },
+    { "path": "docs/openspec/changes/p0-capabilities-settings/specs/mcp-management/spec.md", "sha256": "ec88ef7db15c95cd0be3a9afda6a27a4aa39367ddbb893738c4a451136cbac26" },
+    { "path": "docs/openspec/changes/p0-capabilities-settings/specs/notifications/spec.md", "sha256": "a210dadfc55c95671ef519011bea87be597829e07d6380faa62ac5d028a2a06e" },
+    { "path": "docs/openspec/changes/p0-capabilities-settings/specs/settings-center/spec.md", "sha256": "4e1b57eca0b9519883335053e9afab66c1f3b0b7d010ab9d7a0dbc749efe4100" },
+    { "path": "docs/openspec/changes/p0-capabilities-settings/specs/skill-management/spec.md", "sha256": "f57886ab8faf94e67ebd59adc467130b55eff3cc79c2fe598b982284f34fc806" },
+    { "path": "docs/openspec/changes/p0-capabilities-settings/specs/tool-approvals/spec.md", "sha256": "552146ec2181d9a6fea4c5778b8cdcec42fc8745324d09b66a58b81209dc43e8" }
+  ]
+}

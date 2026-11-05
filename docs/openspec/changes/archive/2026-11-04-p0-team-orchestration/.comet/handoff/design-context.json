@@ -1,0 +1,19 @@
+{
+  "change": "p0-team-orchestration",
+  "phase": "design",
+  "mode": "compact",
+  "canonical_spec": "openspec",
+  "task_hash_policy": "task-content-v1",
+  "generated_by": "comet-handoff.sh",
+  "context_hash": "c4b73062192ffb481d47226fd3d59a9fae2f74bc7bcb8eaba5857e27af7a1e27",
+  "files": [
+    { "path": "docs/openspec/changes/p0-team-orchestration/proposal.md", "sha256": "54d3246b1012776e0f2eb211e7727eafdec3c2ac26ab135773c555fa49e144c4" },
+    { "path": "docs/openspec/changes/p0-team-orchestration/design.md", "sha256": "e5f58c4fb7204f30168061e0e105207ae192244a9153884f0203a12156ef6abb" },
+    { "path": "docs/openspec/changes/p0-team-orchestration/tasks.md", "sha256": "f0cbf867c97530419df8018bb0a75a4badd52ab8afbf2e24a7b74ba5a9fe32ac" },
+    { "path": "docs/openspec/changes/p0-team-orchestration/.openspec.yaml", "sha256": "b6d27c089c6ee9596ce0433bd8f7f771b477758efe1ce7f7a7505af47316ecd0" },
+    { "path": "docs/openspec/changes/p0-team-orchestration/specs/mention-routing/spec.md", "sha256": "56767d342bc1e0dea43e5c3fb81fec7ca24dc7ba8ceb547fd691d8247c52db1d" },
+    { "path": "docs/openspec/changes/p0-team-orchestration/specs/team-conversation/spec.md", "sha256": "095611db67e0036c7b561fe33abe812bb835e8adeadc769f37754c0ac026669e" },
+    { "path": "docs/openspec/changes/p0-team-orchestration/specs/team-management/spec.md", "sha256": "063dba6edb0cbaf45f7f5426f9610c3b56618c7d9c0e25e3e35179967463fc6e" },
+    { "path": "docs/openspec/changes/p0-team-orchestration/specs/team-orchestration/spec.md", "sha256": "3f86b6064974ecd2e63ecb6a181e43b4faa17f1e81061a8c9e84d0dd789743f0" }
+  ]
+}

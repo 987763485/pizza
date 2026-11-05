@@ -1,0 +1,22 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "/Users/chunle/Documents/AgentProjects/Pizza/.claude/skills/comet/scripts/comet-hook-router.mjs",
+              "--platform",
+              "claude",
+              "--project-root",
+              "/Users/chunle/Documents/AgentProjects/Pizza"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

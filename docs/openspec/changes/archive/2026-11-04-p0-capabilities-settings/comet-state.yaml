@@ -1,0 +1,3446 @@
+# comet-execution: managed-run
+change_id: ff7f3805-a3dc-4c71-9619-f4784ef7c343
+workflow: full
+language: zh-CN
+phase: archive
+context_compression: off
+build_mode: autonomous
+build_pause: null
+subagent_dispatch: null
+tdd_mode: tdd
+review_mode: standard
+isolation: current
+verify_mode: null
+auto_transition: true
+base_ref: 4bce946c8fbe4be7ba64d4bb0ce7515d72219c7a
+design_doc: docs/openspec/changes/archive/2026-11-04-p0-capabilities-settings/design.md
+plan: docs/superpowers/plans/2026-11-04-p0-capabilities-settings.md
+verify_result: pass
+verify_failures: 0
+verification_report: docs/superpowers/reports/p0-capabilities-settings.md
+branch_status: pending
+created_at: 2026-11-03
+verified_at: 2026-11-04
+archive_confirmation: confirmed
+archived: true
+bound_branch: dev
+direct_override: false
+handoff_context: docs/openspec/changes/archive/2026-11-04-p0-capabilities-settings/.comet/handoff/design-context.json
+handoff_hash: 2e6602e59599a4ecbe81faaf67e3e6d12431049cf36e3dcf5b3e1bdba181f7ad
+classic_profile: null
+classic_migration: null
+run_checkpoint:
+  schema: comet.workflow-run-checkpoint.v2
+  hash: 5164cdecc8bc12d26df1590de745c353f8a1059e1dc61131e53740f1643054ea
+  run:
+    protocolVersion: 1
+    schemaVersion: 1
+    runId: p0-capabilities-settings
+    revision: 1
+    workflow:
+      id: comet-classic-full
+      version: "1"
+      hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+    definitionHashes:
+      '["comet-classic-full","1"]': ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+    initialStateHash: b374c0bafceea4e36770810aaf5d823a8e6d648a135e7487dbcfd279afef7024
+    input:
+      change: p0-capabilities-settings
+      changeDir: docs/openspec/changes/p0-capabilities-settings
+      workspaceBaseline:
+        ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+    state:
+      archiveConfirmation: confirmed
+      archived: true
+      autoTransition: true
+      baseRef: 4bce946c8fbe4be7ba64d4bb0ce7515d72219c7a
+      boundBranch: dev
+      branchStatus: pending
+      buildMode: autonomous
+      buildPause: null
+      checkEpoch: 8
+      classicMigration: null
+      classicProfile: null
+      contextCompression: off
+      createdAt: 2026-11-03
+      designDoc: docs/openspec/changes/archive/2026-11-04-p0-capabilities-settings/design.md
+      directOverride: false
+      handoffContext: docs/openspec/changes/archive/2026-11-04-p0-capabilities-settings/.comet/handoff/design-context.json
+      handoffHash: 2e6602e59599a4ecbe81faaf67e3e6d12431049cf36e3dcf5b3e1bdba181f7ad
+      isolation: current
+      language: zh-CN
+      phase: archive
+      plan: docs/superpowers/plans/2026-11-04-p0-capabilities-settings.md
+      reviewMode: standard
+      subagentDispatch: null
+      tddMode: tdd
+      verificationReport: docs/superpowers/reports/p0-capabilities-settings.md
+      verifiedAt: 2026-11-04
+      verifyFailures: 0
+      verifyMode: null
+      verifyResult: pass
+      workflow: full
+    status: running
+    sequence: 32
+    actions:
+      - attempt: 1
+        claim:
+          executorId: comet-classic-guard
+          token: portable-e62899d0c23eb63c213b934aacb22cf4b484c9666a8a6474b0bb8dd632f37790
+        executionOrigin:
+          workflow:
+            hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+            id: comet-classic-full
+            version: "1"
+        id: p0-capabilities-settings:1
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: 7a505ad81cc5cbf9fc99122ce90fadc3e57dbe40d3f51c62bee66267385fe36f
+        outcome:
+          actionId: p0-capabilities-settings:1
+          attempt: 1
+          claimToken: portable-e62899d0c23eb63c213b934aacb22cf4b484c9666a8a6474b0bb8dd632f37790
+          inputHash: 7a505ad81cc5cbf9fc99122ce90fadc3e57dbe40d3f51c62bee66267385fe36f
+          outcomeId: 90fd8688-4b65-4c14-9410-1bf59ba58f39
+          output:
+            event: open-complete
+          status: succeeded
+        protocolVersion: 1
+        receipts:
+          - hash: 0e0f82908e05ed601f84a467663eeef52f3ddbcf82540c7cd1b602faf01e7ff9
+            outcomeId: 90fd8688-4b65-4c14-9410-1bf59ba58f39
+        reconciliations: []
+        ref: comet-open
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: succeeded
+        stepId: full.open
+        type: invoke_skill
+      - attempt: 1
+        claim:
+          executorId: comet-classic-open-revalidate
+          token: portable-78a9c3604972fd38c9f37a8d18537cc8af31e4e078b9ea6c07e47eb569ca3716
+        executionOrigin:
+          workflow:
+            hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+            id: comet-classic-full
+            version: "1"
+        id: p0-capabilities-settings:4
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: 713783d3f92747b25cc52559483f9e0e0d57b655358b968a40191723195794bf
+        outcome:
+          actionId: p0-capabilities-settings:4
+          attempt: 1
+          claimToken: portable-78a9c3604972fd38c9f37a8d18537cc8af31e4e078b9ea6c07e47eb569ca3716
+          inputHash: 713783d3f92747b25cc52559483f9e0e0d57b655358b968a40191723195794bf
+          outcomeId: p0-capabilities-settings:4:1:executor-result
+          output:
+            contentHash: 77d8c4bfd66d8bd2915d9150575c36f43477713ad8cc553c563ee1d4bb7d2bdc
+          status: succeeded
+        protocolVersion: 1
+        receipts:
+          - hash: b0d2556c5d72f3d74a3c10d90ba232f06d620f2de8174d254ebb87247b17eac8
+            outcomeId: p0-capabilities-settings:4:1:executor-result
+        reconciliations: []
+        ref: classic-open-revalidate
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: succeeded
+        stepId: full.open.revalidate
+        type: call_tool
+      - attempt: 1
+        claim:
+          executorId: comet-classic-state
+          token: portable-78e74418379d73c930befb9b56f70ef6bdd076767a48b257cd1b357185cd6964
+        executionOrigin:
+          workflow:
+            hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+            id: comet-classic-full
+            version: "1"
+        id: p0-capabilities-settings:5
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: de8ae35f40338deb9b1f5bcbc0651a77827a4e537d8340cb2bec5e57fbff123c
+        outcome:
+          actionId: p0-capabilities-settings:5
+          attempt: 1
+          claimToken: portable-78e74418379d73c930befb9b56f70ef6bdd076767a48b257cd1b357185cd6964
+          inputHash: de8ae35f40338deb9b1f5bcbc0651a77827a4e537d8340cb2bec5e57fbff123c
+          outcomeId: 45d84dd1-8f6c-4012-be73-ad9fb971de3f
+          output:
+            handoffContext: docs/openspec/changes/p0-capabilities-settings/.comet/handoff/design-context.json
+            handoffHash: 2e6602e59599a4ecbe81faaf67e3e6d12431049cf36e3dcf5b3e1bdba181f7ad
+            proposal: 采用 CapabilityResolver + InjectionPipeline：每次运行按智能体→团队成员覆盖→全局默认解析
+              Skill/MCP，失败只影响对应能力并写诊断。Skill 存 ~/.pizza/skills，运行级物化；Claude 用
+              --plugin-dir 加载 plugin，ACP 注入清单/路径。MCP 用官方 TypeScript SDK 支持
+              stdio/SSE/HTTP，凭据 safeStorage 加密，Claude 用 --mcp-config，ACP 以 stdio
+              mcpServers 注入，远程 MCP 在 ACP 不支持时标记不可用。统一 ApprovalService：ACP
+              permission request + Claude PreToolUse hook（临时 --settings + 本地
+              socket）进入同一审批对话框，允许一次/总是允许/拒绝，120 秒超时拒绝，FIFO
+              队列，危险操作默认询问。设置中心扩展默认值、数据目录迁移（复制→校验→切换→保留旧目录）、通知偏好；通知用 Electron
+              Notification/托盘并支持点击定位与免打扰。i18next
+              中英文即时切换，主题/字号/密度/减少动效根属性，启动前读取避免闪烁。首次启动用
+              which/预设命令探测六种运行时，引导创建运行时/智能体/会话；electron-builder 生成未签名 macOS
+              zip/dmg，构建校验版本与许可。新增迁移
+              v5：skill、skill_binding、mcp_server、mcp_binding、approval、notification。风险：CLI
+              hook 版本差异（安全拒绝）、凭据泄漏（掩码/加密/导出白名单）、审批阻塞（超时拒绝）、i18n
+              遗漏（键扫描）、打包签名限制（未签名验收）。
+            requirementsEvidence:
+              contentHash: 3a68addcf31b3581c421198cfa8d7b3cffe82764e17573521f259e4a5d18b6f2
+              ref: docs/openspec/changes/p0-capabilities-settings
+            sourceEvidence:
+              contentHash: d9aca6db153a1f07c7c0187154dedae0a00c5dc8adcca9d1a95576b72f476b37
+              ref: docs/openspec/changes/p0-capabilities-settings
+          status: succeeded
+        protocolVersion: 1
+        receipts:
+          - hash: 5db1c46c6b261f969cb6ca489f50525c53b7892077748f24a1c6ad03d705738e
+            outcomeId: 45d84dd1-8f6c-4012-be73-ad9fb971de3f
+        reconciliations: []
+        ref: comet-design
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: succeeded
+        stepId: full.design.handoff
+        type: invoke_skill
+      - attempt: 1
+        claim:
+          executorId: comet-classic-state
+          token: portable-ec1ebcf2c8f58a8ea4a526ac74d703a7522e29c0f50e2e50cda7ea90cd1ce95a
+        executionOrigin:
+          workflow:
+            hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+            id: comet-classic-full
+            version: "1"
+        id: p0-capabilities-settings:7
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: 4d097d57aaa7755766ba47b35f5dcef3c38e833965b9b4055ce31268cf0b1e7b
+        outcome:
+          actionId: p0-capabilities-settings:7
+          attempt: 1
+          claimToken: portable-ec1ebcf2c8f58a8ea4a526ac74d703a7522e29c0f50e2e50cda7ea90cd1ce95a
+          inputHash: 4d097d57aaa7755766ba47b35f5dcef3c38e833965b9b4055ce31268cf0b1e7b
+          outcomeId: ef23eaea-9e70-42e0-9ea3-399d8939cdfd
+          output:
+            designDoc: docs/openspec/changes/p0-capabilities-settings/design.md
+          status: succeeded
+        protocolVersion: 1
+        receipts:
+          - hash: 6edd4e52d04adb98e48fbceae2496f929b54a523f72538c861b8d1de41c0c349
+            outcomeId: ef23eaea-9e70-42e0-9ea3-399d8939cdfd
+        reconciliations: []
+        ref: comet-design
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: succeeded
+        stepId: full.design.document
+        type: invoke_skill
+      - attempt: 1
+        claim:
+          executorId: comet-classic-state
+          token: portable-ab81a5427522c1cca59e0541e2a1f073a209ba5eba38adcfa881eb3c54132d27
+        executionOrigin:
+          workflow:
+            hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+            id: comet-classic-full
+            version: "1"
+        id: p0-capabilities-settings:9
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: 51debd8993348fbd7589715596b00fa2a7df2d6437d4afd5c0f14726e3b89e36
+        outcome:
+          actionId: p0-capabilities-settings:9
+          attempt: 1
+          claimToken: portable-ab81a5427522c1cca59e0541e2a1f073a209ba5eba38adcfa881eb3c54132d27
+          inputHash: 51debd8993348fbd7589715596b00fa2a7df2d6437d4afd5c0f14726e3b89e36
+          outcomeId: de211d34-7d1b-4314-9750-93a90b00381c
+          output:
+            boundBranch: dev
+            buildMode: autonomous
+            directOverride: false
+            isolation: current
+            reviewMode: standard
+            subagentDispatch: null
+            tddMode: tdd
+          status: succeeded
+        protocolVersion: 1
+        receipts:
+          - hash: 03f2a532cba0246babc76e8bb8d3ce4d186f5a432ca1aa700d47df022f4d4db6
+            outcomeId: de211d34-7d1b-4314-9750-93a90b00381c
+        reconciliations: []
+        ref: comet-build
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: succeeded
+        stepId: full.build.configure
+        type: invoke_skill
+      - attempt: 1
+        claim:
+          executorId: comet-classic-state
+          token: portable-3165e1a7fc486386a5d6fe4e12b360af9770c7bc10e9f9f7897bcde8a3c37948
+        executionOrigin:
+          workflow:
+            hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+            id: comet-classic-full
+            version: "1"
+        id: p0-capabilities-settings:11
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: 6306ce8fadeb46615569edf6a609c477b5405090840ec8d4bb1175b4098ed78e
+        outcome:
+          actionId: p0-capabilities-settings:11
+          attempt: 1
+          claimToken: portable-3165e1a7fc486386a5d6fe4e12b360af9770c7bc10e9f9f7897bcde8a3c37948
+          inputHash: 6306ce8fadeb46615569edf6a609c477b5405090840ec8d4bb1175b4098ed78e
+          outcomeId: b9d19e15-471e-46f3-9982-8a836b54d1e2
+          output:
+            designEvidence:
+              contentHash: 3e87b77c81102b3dbedc7fb9fd5eb006ed4587e05b55e50419b5a932c9b1125f
+              ref: docs/openspec/changes/p0-capabilities-settings/design.md
+            plan: docs/superpowers/plans/2026-11-04-p0-capabilities-settings.md
+            planEvidence:
+              contentHash: fce4d5e3822373fcd3be10aa96398e0aa4d005ab15796d6543f1f05e480925c8
+              ref: docs/superpowers/plans/2026-11-04-p0-capabilities-settings.md
+            taskRevision: b3b819d5839d07a8862ef061d27a0294eabc0e1f09d4ed12ee64a75f6eb80bfa
+          status: succeeded
+        protocolVersion: 1
+        receipts:
+          - hash: 43fabbccd6631e3c9048a1843729c209afc67d8b88836e93637daf0b262b4fba
+            outcomeId: b9d19e15-471e-46f3-9982-8a836b54d1e2
+        reconciliations: []
+        ref: comet-build
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: succeeded
+        stepId: full.build.plan
+        type: invoke_skill
+      - attempt: 1
+        claim:
+          executorId: comet-classic-state
+          sessionId: classic-builder/p0-capabilities-settings:13/1
+          token: portable-bc690fb7130bcd67170499b5de5a9b4252d611a84c8077f179926a139ec2948d
+        executionOrigin:
+          workflow:
+            hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+            id: comet-classic-full
+            version: "1"
+        id: p0-capabilities-settings:13
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: 0860be1bf153cb2fe503e1fa69527d133096a0ef24ede0d48f5b7255d2ffb9c1
+        outcome:
+          actionId: p0-capabilities-settings:13
+          attempt: 1
+          claimToken: portable-bc690fb7130bcd67170499b5de5a9b4252d611a84c8077f179926a139ec2948d
+          inputHash: 0860be1bf153cb2fe503e1fa69527d133096a0ef24ede0d48f5b7255d2ffb9c1
+          outcomeId: c96c031a-e835-44bd-befd-03cc13ba7581
+          output:
+            event: build-complete
+          status: succeeded
+        protocolVersion: 1
+        receipts:
+          - hash: b4dcb0dd4cf6132689c357c05c13e9033824aba91c8dc26f7b8a01986a51f389
+            outcomeId: c96c031a-e835-44bd-befd-03cc13ba7581
+        reconciliations: []
+        ref: comet-build
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: succeeded
+        stepId: full.build.execute
+        type: invoke_skill
+      - attempt: 1
+        claim:
+          executorId: comet-classic-check
+          token: portable-3838273e73c8baf8c8596a0d008f7e69606566dcc6f07605d5f5df51f026348e
+        executionOrigin:
+          workflow:
+            hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+            id: comet-classic-full
+            version: "1"
+        id: p0-capabilities-settings:14
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: e91db5bd3c66d1794e3167b8022295cb25d516b472a54bbd10166b611db6601e
+        outcome:
+          actionId: p0-capabilities-settings:14
+          attempt: 1
+          claimToken: portable-3838273e73c8baf8c8596a0d008f7e69606566dcc6f07605d5f5df51f026348e
+          inputHash: e91db5bd3c66d1794e3167b8022295cb25d516b472a54bbd10166b611db6601e
+          outcomeId: 89bc98b8-143c-4f00-a5e2-e280c8e5b8cb
+          output:
+            argv:
+              - npm
+              - run
+              - verify
+            changedDuringExecution: []
+            checkEpoch: 2
+            contentHash: 52cb1adf8b654ddab4147f4182bfadfbfdb6ed306dcf4a551be6db754e09588a
+            cwd: .
+            environment: 7a9b002e8811342893d8df46edb57c1e50400ad8c1c05fd30d88153d4ca7673f
+            exitCode: 0
+            inputAfter: c10ab04f7ea53a2faa9bf8339a53ffebabefdda5fb386a7d8be9c03731628986
+            inputBefore: c10ab04f7ea53a2faa9bf8339a53ffebabefdda5fb386a7d8be9c03731628986
+            manifestHash: af1ee4004a56841ad7f0398428ff6f95b2f8592a404c10590804afd94c98cd1f
+            manifestRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/522ce839-ff10-493c-a72b-e16478040370.manifest
+            receiptRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/7497d783-4df5-4f12-bf5f-c820028f41fe.log
+            reusable: false
+            reused: false
+            scope: build
+            tier: full
+            timeoutMs: 300000
+          status: succeeded
+        protocolVersion: 1
+        receipts:
+          - hash: 886e546be5370c4bd07e992d4c6d5d4cdbfe91df17647a1568a4c4baccc74318
+            outcomeId: 89bc98b8-143c-4f00-a5e2-e280c8e5b8cb
+        reconciliations: []
+        ref: classic-check
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: succeeded
+        stepId: full.build.check
+        type: call_tool
+      - attempt: 1
+        claim:
+          executorId: comet-classic-state
+          token: portable-841cd565dde984e62d5a4723f864fd7a279e606dba631a9af822169db256ae33
+        executionOrigin:
+          workflow:
+            hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+            id: comet-classic-full
+            version: "1"
+        id: p0-capabilities-settings:16
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: f99d80f92ff5e9d244a44661fbdef8b0f7db84021cc9aee625e48d591f8a2667
+        outcome:
+          actionId: p0-capabilities-settings:16
+          attempt: 1
+          claimToken: portable-841cd565dde984e62d5a4723f864fd7a279e606dba631a9af822169db256ae33
+          inputHash: f99d80f92ff5e9d244a44661fbdef8b0f7db84021cc9aee625e48d591f8a2667
+          outcomeId: ffcf7c30-2e4c-4a57-b228-b1b094cab43a
+          output:
+            event: verify-fail
+            reason: Verify 自检发现三处规格偏差：Skill 物化失败仅记录诊断未阻止运行；被显式禁用的 MCP
+              绑定会被运行时本地同名配置重新启用；首次启动引导未自动创建首个通用助手智能体
+          status: succeeded
+        protocolVersion: 1
+        receipts:
+          - hash: 82b7a3e2880055da4cdc9ce1a4870971cb64f04ec60a9ad666a6c32e5214ca33
+            outcomeId: ffcf7c30-2e4c-4a57-b228-b1b094cab43a
+        reconciliations: []
+        ref: comet-verify
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: succeeded
+        stepId: full.verify.run
+        type: invoke_skill
+      - attempt: 1
+        claim:
+          executorId: comet-classic-state
+          token: portable-9416df564d1af3440a8015dcb18d015e303be0060c1cb2cb93a9c29b6348f21d
+        executionOrigin:
+          workflow:
+            hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+            id: comet-classic-full
+            version: "1"
+        id: p0-capabilities-settings:17
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: bd15851d8d9ddbde7c9d8f85f3353ffa1031fc3dfb914f9f126b47d3a0e228f3
+        outcome:
+          actionId: p0-capabilities-settings:17
+          attempt: 1
+          claimToken: portable-9416df564d1af3440a8015dcb18d015e303be0060c1cb2cb93a9c29b6348f21d
+          inputHash: bd15851d8d9ddbde7c9d8f85f3353ffa1031fc3dfb914f9f126b47d3a0e228f3
+          outcomeId: fc451085-0d4e-49e2-9797-15b1003f2e86
+          output:
+            designEvidence:
+              contentHash: 3e87b77c81102b3dbedc7fb9fd5eb006ed4587e05b55e50419b5a932c9b1125f
+              ref: docs/openspec/changes/p0-capabilities-settings/design.md
+            plan: docs/superpowers/plans/2026-11-04-p0-capabilities-settings.md
+            planEvidence:
+              contentHash: fce4d5e3822373fcd3be10aa96398e0aa4d005ab15796d6543f1f05e480925c8
+              ref: docs/superpowers/plans/2026-11-04-p0-capabilities-settings.md
+            taskRevision: b3b819d5839d07a8862ef061d27a0294eabc0e1f09d4ed12ee64a75f6eb80bfa
+          status: succeeded
+        protocolVersion: 1
+        receipts:
+          - hash: 921ec49bf9085980d265439232b51913264579fab4379be01fe19d31738834f8
+            outcomeId: fc451085-0d4e-49e2-9797-15b1003f2e86
+        reconciliations: []
+        ref: comet-build
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: succeeded
+        stepId: full.build.plan
+        type: invoke_skill
+      - attempt: 1
+        claim:
+          executorId: comet-classic-state
+          sessionId: capabilities-builder-review-fixes
+          token: portable-bf39785972c2d37b198711f3db74463514c5afb8d4273627139029c4110cdc1f
+        executionOrigin:
+          workflow:
+            hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+            id: comet-classic-full
+            version: "1"
+        id: p0-capabilities-settings:19
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: bd15851d8d9ddbde7c9d8f85f3353ffa1031fc3dfb914f9f126b47d3a0e228f3
+        outcome:
+          actionId: p0-capabilities-settings:19
+          attempt: 1
+          claimToken: portable-bf39785972c2d37b198711f3db74463514c5afb8d4273627139029c4110cdc1f
+          inputHash: bd15851d8d9ddbde7c9d8f85f3353ffa1031fc3dfb914f9f126b47d3a0e228f3
+          outcomeId: e068c8cd-5fdb-4d43-ae4c-52aae28a044f
+          output:
+            event: build-complete
+          status: succeeded
+        protocolVersion: 1
+        receipts:
+          - hash: 1abbf91db2e617955cd672ad6db98bb7624735fe1e6541d8c19d0ac51534d9f0
+            outcomeId: e068c8cd-5fdb-4d43-ae4c-52aae28a044f
+        reconciliations: []
+        ref: comet-build
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: succeeded
+        stepId: full.build.execute
+        type: invoke_skill
+      - attempt: 1
+        claim:
+          executorId: comet-classic-check
+          token: portable-7e2bd0dc542ce756e033589f37a09807e20faeafb5b4c22be2746506660269a7
+        executionOrigin:
+          workflow:
+            hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+            id: comet-classic-full
+            version: "1"
+        id: p0-capabilities-settings:20
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: bd15851d8d9ddbde7c9d8f85f3353ffa1031fc3dfb914f9f126b47d3a0e228f3
+        outcome:
+          actionId: p0-capabilities-settings:20
+          attempt: 1
+          claimToken: portable-7e2bd0dc542ce756e033589f37a09807e20faeafb5b4c22be2746506660269a7
+          inputHash: bd15851d8d9ddbde7c9d8f85f3353ffa1031fc3dfb914f9f126b47d3a0e228f3
+          outcomeId: 353b0a32-25ba-436b-b47f-64b1188b93a4
+          output:
+            argv:
+              - npm
+              - run
+              - verify
+            changedDuringExecution: []
+            checkEpoch: 4
+            contentHash: 9bff23d95fd80431a107a7b9026d8500d59de893d1a91d033c1ddca383ff0371
+            cwd: .
+            environment: 7a9b002e8811342893d8df46edb57c1e50400ad8c1c05fd30d88153d4ca7673f
+            exitCode: 1
+            inputAfter: bd4e5941925b51cdc362d09fbd285f179e568adc670d60beb42906b5fbd891b9
+            inputBefore: bd4e5941925b51cdc362d09fbd285f179e568adc670d60beb42906b5fbd891b9
+            manifestHash: 804b146f3677d35ed09aa42ba7ddc5d84e6d57c5726b4fad7130f96dedc84a0a
+            manifestRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/3585bd65-e5ae-4355-97fa-0895ef752f29.manifest
+            receiptRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/0c02ed49-59b7-4741-8e6d-efcf8bf3cb69.log
+            reusable: false
+            reused: false
+            scope: build
+            tier: full
+            timeoutMs: 300000
+          status: failed
+        protocolVersion: 1
+        receipts:
+          - hash: 770e0ef9944eed581175c4fd057fd56b79c6e5a699f99317cef37a75a65b503c
+            outcomeId: 353b0a32-25ba-436b-b47f-64b1188b93a4
+        reconciliations: []
+        ref: classic-check
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: failed
+        stepId: full.build.check
+        type: call_tool
+      - attempt: 1
+        claim:
+          executorId: comet-classic-state
+          sessionId: classic-builder/p0-capabilities-settings:21/1
+          token: portable-d6cdfb6b8929de93c78be8550749f40f79b4a8b04e815a70e6e14d36ed026964
+        executionOrigin:
+          workflow:
+            hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+            id: comet-classic-full
+            version: "1"
+        id: p0-capabilities-settings:21
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: 41e3aeb8ecb9c2214733b77a185fe2d89d0b753e49222cc1ff135689fa7a8890
+        outcome:
+          actionId: p0-capabilities-settings:21
+          attempt: 1
+          claimToken: portable-d6cdfb6b8929de93c78be8550749f40f79b4a8b04e815a70e6e14d36ed026964
+          inputHash: 41e3aeb8ecb9c2214733b77a185fe2d89d0b753e49222cc1ff135689fa7a8890
+          outcomeId: 95f84a26-1691-47b3-b579-efc0c047a806
+          output:
+            event: build-complete
+          status: succeeded
+        protocolVersion: 1
+        receipts:
+          - hash: 8e34082e960a527055e6f83dbfdabdae1cdaec34de3fd5189780704fa68402e1
+            outcomeId: 95f84a26-1691-47b3-b579-efc0c047a806
+        reconciliations: []
+        ref: comet-build
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: succeeded
+        stepId: full.build.execute
+        type: invoke_skill
+      - attempt: 1
+        claim:
+          executorId: comet-classic-check
+          token: portable-3cac4c3c2cfc68e0d2a74d3b7920e57211407d1aba79540cc53304a4ef73a82a
+        executionOrigin:
+          workflow:
+            hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+            id: comet-classic-full
+            version: "1"
+        id: p0-capabilities-settings:22
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: 41e3aeb8ecb9c2214733b77a185fe2d89d0b753e49222cc1ff135689fa7a8890
+        outcome:
+          actionId: p0-capabilities-settings:22
+          attempt: 1
+          claimToken: portable-3cac4c3c2cfc68e0d2a74d3b7920e57211407d1aba79540cc53304a4ef73a82a
+          inputHash: 41e3aeb8ecb9c2214733b77a185fe2d89d0b753e49222cc1ff135689fa7a8890
+          outcomeId: 518e1c98-50aa-4de5-a260-e4d47d072ca6
+          output:
+            argv:
+              - npm
+              - run
+              - verify
+            changedDuringExecution: []
+            checkEpoch: 4
+            contentHash: 0e1a243d2cd1fb98ba955f9408d17e6c9eb1811e994d1f0c6a0843442fbca2a4
+            cwd: .
+            environment: 7a9b002e8811342893d8df46edb57c1e50400ad8c1c05fd30d88153d4ca7673f
+            exitCode: 0
+            inputAfter: 04a408fb0fbdc573a6978f8e768cfac0446af37be12d6f7a06bc5e1c2690e4b8
+            inputBefore: 04a408fb0fbdc573a6978f8e768cfac0446af37be12d6f7a06bc5e1c2690e4b8
+            manifestHash: 632a6b933572918f0b0c9b1eaae06ed54e6aab960b670334f66a22e3dfb277f6
+            manifestRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/13dd7f3e-f4ec-4cf2-bb0f-e504f3fc4452.manifest
+            receiptRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/700a45d8-59c9-497c-90f3-04c3d3790f03.log
+            reusable: false
+            reused: false
+            scope: build
+            tier: full
+            timeoutMs: 300000
+          status: succeeded
+        protocolVersion: 1
+        receipts:
+          - hash: 14130a83e91864651c55cb53e057f5cb3db46fa3f42ebbc06f3f7cf9cc67e9bb
+            outcomeId: 518e1c98-50aa-4de5-a260-e4d47d072ca6
+        reconciliations: []
+        ref: classic-check
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: succeeded
+        stepId: full.build.check
+        type: call_tool
+      - attempt: 1
+        claim:
+          executorId: comet-classic-guard
+          token: portable-b0c6226633cd9c112a23491fcb0fc6517c4ade01b372a77509dc7e6030fa1c35
+        executionOrigin:
+          workflow:
+            hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+            id: comet-classic-full
+            version: "1"
+        id: p0-capabilities-settings:24
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: 48fe6dbf289bbf609442280d94d3e355d55c63bfae56b5996099efc5f95fc0f3
+        outcome:
+          actionId: p0-capabilities-settings:24
+          attempt: 1
+          claimToken: portable-b0c6226633cd9c112a23491fcb0fc6517c4ade01b372a77509dc7e6030fa1c35
+          inputHash: 48fe6dbf289bbf609442280d94d3e355d55c63bfae56b5996099efc5f95fc0f3
+          outcomeId: d6088a17-ac27-4030-8d87-b78e73eb3403
+          output:
+            event: verification-ready
+            verificationReport: docs/superpowers/reports/p0-capabilities-settings.md
+          status: succeeded
+        protocolVersion: 1
+        receipts:
+          - hash: 34ad8040847adb89f527221b28dafb59f7e1ac4ea1f9a4bb1a9cb27a73367c3c
+            outcomeId: d6088a17-ac27-4030-8d87-b78e73eb3403
+        reconciliations: []
+        ref: comet-verify
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: succeeded
+        stepId: full.verify.run
+        type: invoke_skill
+      - attempt: 1
+        claim:
+          executorId: comet-classic-check
+          token: portable-1a4ef2a1f88afdce3bb05dfc5ccb940cabbee91a4c41fec4d2637a1bdb8915e2
+        executionOrigin:
+          workflow:
+            hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+            id: comet-classic-full
+            version: "1"
+        id: p0-capabilities-settings:26
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: 307599ad7aa308950cdf78e13b445efb71bcc0f8fc4bf3adf4e3397d169513fb
+        outcome:
+          actionId: p0-capabilities-settings:26
+          attempt: 1
+          claimToken: portable-1a4ef2a1f88afdce3bb05dfc5ccb940cabbee91a4c41fec4d2637a1bdb8915e2
+          inputHash: 307599ad7aa308950cdf78e13b445efb71bcc0f8fc4bf3adf4e3397d169513fb
+          outcomeId: 99960a41-ff62-4bae-ac9b-226b0a228e00
+          output:
+            argv:
+              - npm
+              - run
+              - verify
+            changedDuringExecution: []
+            checkEpoch: 5
+            contentHash: 54de48ec6357ce3f5fe80d0a1071e8238eee5e6cf7ce7125e283c260911b2373
+            cwd: .
+            deliveryInputs: {}
+            environment: 7a9b002e8811342893d8df46edb57c1e50400ad8c1c05fd30d88153d4ca7673f
+            exitCode: 0
+            inputAfter: 04a408fb0fbdc573a6978f8e768cfac0446af37be12d6f7a06bc5e1c2690e4b8
+            inputBefore: 04a408fb0fbdc573a6978f8e768cfac0446af37be12d6f7a06bc5e1c2690e4b8
+            manifestHash: 632a6b933572918f0b0c9b1eaae06ed54e6aab960b670334f66a22e3dfb277f6
+            manifestRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/134bffbe-ebfe-4974-a0e8-e4ed909ac6cd.manifest
+            receiptRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/59d16695-3c0b-4e05-86c3-c33dc3df11f3.log
+            reusable: false
+            reused: false
+            scope: verify
+            tier: full
+            timeoutMs: 300000
+          status: succeeded
+        protocolVersion: 1
+        receipts:
+          - hash: 063a9244feeff4499b955f42fb32eced099de759b09ff26c435d3a5303d2ccec
+            outcomeId: 99960a41-ff62-4bae-ac9b-226b0a228e00
+        reconciliations: []
+        ref: classic-check
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: succeeded
+        stepId: full.verify.check
+        type: call_tool
+      - attempt: 1
+        claim:
+          executorId: comet-classic-state
+          token: portable-f85037827ff56101863ab1730619986bf666ec90ab77b149860fb42f6f3bcb46
+        executionOrigin:
+          workflow:
+            hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+            id: comet-classic-full
+            version: "1"
+        id: p0-capabilities-settings:28
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: 997fa212a35f37dfe3998f254ea9c98d473bf1c81a347eecd127c4b0da7ab62f
+        outcome:
+          actionId: p0-capabilities-settings:28
+          attempt: 1
+          claimToken: portable-f85037827ff56101863ab1730619986bf666ec90ab77b149860fb42f6f3bcb46
+          inputHash: 997fa212a35f37dfe3998f254ea9c98d473bf1c81a347eecd127c4b0da7ab62f
+          outcomeId: 1a6c5bf8-61de-4d6d-afff-e59fd140c6e9
+          output:
+            summary: 归档 p0-capabilities-settings：66/66 任务完成，26 个测试文件 121 项通过，类型检查、构建、5 项
+              E2E、macOS dmg/zip 与真实 Claude Code 打包验收均通过；独立审查 10 项问题已修复。仅本地归档并提交。
+            targetBranch: dev
+          status: succeeded
+        protocolVersion: 1
+        receipts:
+          - hash: f35009500d8e596932d18220d01455a7110537d773e0303836c51828084a9a48
+            outcomeId: 1a6c5bf8-61de-4d6d-afff-e59fd140c6e9
+        reconciliations: []
+        ref: comet-archive
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: succeeded
+        stepId: full.archive.prepare
+        type: invoke_skill
+      - attempt: 1
+        claim:
+          executorId: comet-classic-archive-preflight
+          token: portable-76b562e692ae7b931c65c3d9bb958bc8a9e7b728ed308ed185048f6fac68095d
+        executionOrigin:
+          workflow:
+            hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+            id: comet-classic-full
+            version: "1"
+        id: p0-capabilities-settings:30
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: e0587329e2368fdadef9a136d4c39d0b2dd27ed9ab8e3a87e685f9392a97eeab
+        outcome:
+          actionId: p0-capabilities-settings:30
+          attempt: 1
+          claimToken: portable-76b562e692ae7b931c65c3d9bb958bc8a9e7b728ed308ed185048f6fac68095d
+          inputHash: e0587329e2368fdadef9a136d4c39d0b2dd27ed9ab8e3a87e685f9392a97eeab
+          outcomeId: 2f27d606-bfb8-4b32-b1bf-8ab013b351b8
+          output:
+            baseCommit: 83e70cc736690a846ab1853ae857520cc59f05a0
+            deliveryAction: local
+            targetBranch: dev
+            verifiedBranch: dev
+          status: succeeded
+        protocolVersion: 1
+        receipts:
+          - hash: 02c725a2775c1cdb7042135b3e7c8445379a0d49f47f6f579fb49f9bdc7321d6
+            outcomeId: 2f27d606-bfb8-4b32-b1bf-8ab013b351b8
+        reconciliations: []
+        ref: classic-archive-preflight
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: succeeded
+        stepId: full.archive.preflight
+        type: call_tool
+      - attempt: 1
+        claim:
+          executorId: comet-classic-archive
+          token: portable-2c6d1412ce30b1ad544d9a90fecfd4b92f1c302a624a3fc5e7f4959f8cb274d2
+        executionOrigin:
+          workflow:
+            hash: ee198afdb53add0c23f98202aae8cdbe4079b9f4ebf7a62ed4ab8411ed591db5
+            id: comet-classic-full
+            version: "1"
+        id: p0-capabilities-settings:31
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: 43c494c6925dc910502486019ca5618281aa7170d72bf48c186a3013dbc472f4
+        outcome:
+          actionId: p0-capabilities-settings:31
+          artifacts:
+            - sha256: cf3604f3888946edb338800d841edcb0ff3a2bbc9b04d446bdc6ccd6e8980342
+              uri: docs/openspec/changes/archive/2026-11-04-p0-capabilities-settings/.comet/archive-manifest.json
+          attempt: 1
+          claimToken: portable-2c6d1412ce30b1ad544d9a90fecfd4b92f1c302a624a3fc5e7f4959f8cb274d2
+          inputHash: 43c494c6925dc910502486019ca5618281aa7170d72bf48c186a3013dbc472f4
+          outcomeId: 6e864983-f310-4f21-9117-cba5f73d1fa3
+          output:
+            archiveDirectory: docs/openspec/changes/archive/2026-11-04-p0-capabilities-settings
+          status: succeeded
+        protocolVersion: 1
+        receipts:
+          - hash: 20a98ee2330b505277e8201d877b6b838b1c2147931f4c5a19f1d277d9315b76
+            outcomeId: 6e864983-f310-4f21-9117-cba5f73d1fa3
+        reconciliations: []
+        ref: classic-archive
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: succeeded
+        stepId: full.archive.execute
+        type: call_tool
+      - attempt: 1
+        id: p0-capabilities-settings:32
+        input:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs: {}
+        inputHash: e56da5c6f765538254c640413951184085ff93e5bea97faa5d9c2dffded94a3a
+        protocolVersion: 1
+        receipts: []
+        reconciliations: []
+        ref: comet-archive
+        requiredCapabilities: []
+        retry: manual
+        runId: p0-capabilities-settings
+        status: pending
+        stepId: full.archive.deliver
+        type: invoke_skill
+    actionContexts:
+      p0-capabilities-settings:1:
+        results: {}
+        sequence: 1
+      p0-capabilities-settings:11:
+        results: {}
+        sequence: 11
+      p0-capabilities-settings:13:
+        results: {}
+        sequence: 13
+      p0-capabilities-settings:14:
+        results: {}
+        sequence: 14
+      p0-capabilities-settings:16:
+        results: {}
+        sequence: 16
+      p0-capabilities-settings:17:
+        results: {}
+        sequence: 17
+      p0-capabilities-settings:19:
+        results: {}
+        sequence: 19
+      p0-capabilities-settings:20:
+        results: {}
+        sequence: 20
+      p0-capabilities-settings:21:
+        results: {}
+        sequence: 21
+      p0-capabilities-settings:22:
+        results: {}
+        sequence: 22
+      p0-capabilities-settings:24:
+        results: {}
+        sequence: 24
+      p0-capabilities-settings:26:
+        results: {}
+        sequence: 26
+      p0-capabilities-settings:28:
+        results: {}
+        sequence: 28
+      p0-capabilities-settings:30:
+        results: {}
+        sequence: 30
+      p0-capabilities-settings:31:
+        results: {}
+        sequence: 31
+      p0-capabilities-settings:32:
+        results: {}
+        sequence: 32
+      p0-capabilities-settings:4:
+        results: {}
+        sequence: 4
+      p0-capabilities-settings:5:
+        results: {}
+        sequence: 5
+      p0-capabilities-settings:7:
+        results: {}
+        sequence: 7
+      p0-capabilities-settings:9:
+        results: {}
+        sequence: 9
+    waits:
+      - id: p0-capabilities-settings:3
+        stepId: full.open.confirm
+        sequence: 3
+        status: resolved
+        proposal:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs:
+            full.open:
+              event: open-complete
+            full.open.evidence:
+              contentHash: 77d8c4bfd66d8bd2915d9150575c36f43477713ad8cc553c563ee1d4bb7d2bdc
+              ref: docs/openspec/changes/p0-capabilities-settings
+        proposalHash: 63700a2d72e9a5ce05b18aa797233b28adfec18935eb6f7e4b9f401f1ae08b99
+        choices:
+          - approved
+          - rejected
+        results: {}
+        decision:
+          id: classic-open-77d8c4bfd66d8bd2915d9150575c36f43477713ad8cc553c563ee1d4bb7d2bdc
+          choice: approved
+          proposalHash: 63700a2d72e9a5ce05b18aa797233b28adfec18935eb6f7e4b9f401f1ae08b99
+      - id: p0-capabilities-settings:6
+        stepId: full.design.confirm
+        sequence: 6
+        status: resolved
+        proposal:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs:
+            full.design.handoff:
+              handoffContext: docs/openspec/changes/p0-capabilities-settings/.comet/handoff/design-context.json
+              handoffHash: 2e6602e59599a4ecbe81faaf67e3e6d12431049cf36e3dcf5b3e1bdba181f7ad
+              proposal: 采用 CapabilityResolver + InjectionPipeline：每次运行按智能体→团队成员覆盖→全局默认解析
+                Skill/MCP，失败只影响对应能力并写诊断。Skill 存 ~/.pizza/skills，运行级物化；Claude 用
+                --plugin-dir 加载 plugin，ACP 注入清单/路径。MCP 用官方 TypeScript SDK 支持
+                stdio/SSE/HTTP，凭据 safeStorage 加密，Claude 用 --mcp-config，ACP 以
+                stdio mcpServers 注入，远程 MCP 在 ACP 不支持时标记不可用。统一
+                ApprovalService：ACP permission request + Claude PreToolUse
+                hook（临时 --settings + 本地 socket）进入同一审批对话框，允许一次/总是允许/拒绝，120
+                秒超时拒绝，FIFO 队列，危险操作默认询问。设置中心扩展默认值、数据目录迁移（复制→校验→切换→保留旧目录）、通知偏好；通知用
+                Electron Notification/托盘并支持点击定位与免打扰。i18next
+                中英文即时切换，主题/字号/密度/减少动效根属性，启动前读取避免闪烁。首次启动用
+                which/预设命令探测六种运行时，引导创建运行时/智能体/会话；electron-builder 生成未签名 macOS
+                zip/dmg，构建校验版本与许可。新增迁移
+                v5：skill、skill_binding、mcp_server、mcp_binding、approval、notification。风险：CLI
+                hook 版本差异（安全拒绝）、凭据泄漏（掩码/加密/导出白名单）、审批阻塞（超时拒绝）、i18n
+                遗漏（键扫描）、打包签名限制（未签名验收）。
+              requirementsEvidence:
+                contentHash: 3a68addcf31b3581c421198cfa8d7b3cffe82764e17573521f259e4a5d18b6f2
+                ref: docs/openspec/changes/p0-capabilities-settings
+              sourceEvidence:
+                contentHash: d9aca6db153a1f07c7c0187154dedae0a00c5dc8adcca9d1a95576b72f476b37
+                ref: docs/openspec/changes/p0-capabilities-settings
+        proposalHash: 2cf1f1109051674b5f960c9f4ee9965bd3bd5fba1ab247da90cce3cc0319291e
+        choices:
+          - approved
+          - rejected
+        results: {}
+        decision:
+          id: classic-design-2cf1f1109051674b5f960c9f4ee9965bd3bd5fba1ab247da90cce3cc0319291e-approved
+          choice: approved
+          proposalHash: 2cf1f1109051674b5f960c9f4ee9965bd3bd5fba1ab247da90cce3cc0319291e
+      - id: p0-capabilities-settings:10
+        stepId: full.build.confirm
+        sequence: 10
+        status: resolved
+        proposal:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs:
+            full.build.configure:
+              boundBranch: dev
+              buildMode: autonomous
+              directOverride: false
+              isolation: current
+              reviewMode: standard
+              subagentDispatch: null
+              tddMode: tdd
+        proposalHash: 74d5cb96a28b9999f5aa6b00ab927f501b148ffebb3eb9adf75a3471910e98f8
+        choices:
+          - approved
+          - rejected
+        results: {}
+        decision:
+          id: 22b9a795-f9ec-4d9d-89f1-89fc8b981061
+          choice: approved
+          proposalHash: 74d5cb96a28b9999f5aa6b00ab927f501b148ffebb3eb9adf75a3471910e98f8
+      - id: p0-capabilities-settings:29
+        stepId: full.archive.confirm
+        sequence: 29
+        status: resolved
+        proposal:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs:
+            full.archive.prepare:
+              summary: 归档 p0-capabilities-settings：66/66 任务完成，26 个测试文件 121 项通过，类型检查、构建、5 项
+                E2E、macOS dmg/zip 与真实 Claude Code 打包验收均通过；独立审查 10
+                项问题已修复。仅本地归档并提交。
+              targetBranch: dev
+        proposalHash: 9583c43e22088181d7e390aad34d8a58a21b9afa456828ddb8320b83be28d9cb
+        choices:
+          - local
+          - push
+          - pr
+          - reverify
+          - later
+        results: {}
+        decision:
+          id: classic-archive-9583c43e22088181d7e390aad34d8a58a21b9afa456828ddb8320b83be28d9cb-local
+          choice: local
+          proposalHash: 9583c43e22088181d7e390aad34d8a58a21b9afa456828ddb8320b83be28d9cb
+    evidenceWaits:
+      - id: p0-capabilities-settings:2
+        stepId: full.open.evidence
+        sequence: 2
+        kind: classic-open-artifacts
+        status: resolved
+        results: {}
+        receipt:
+          ref: docs/openspec/changes/p0-capabilities-settings
+          contentHash: 77d8c4bfd66d8bd2915d9150575c36f43477713ad8cc553c563ee1d4bb7d2bdc
+          submissionId: a6f73dbe-7163-4be1-aab3-de7c0f6e9553
+      - id: p0-capabilities-settings:8
+        stepId: full.design.evidence
+        sequence: 8
+        kind: classic-design-document
+        status: resolved
+        results: {}
+        receipt:
+          ref: docs/openspec/changes/p0-capabilities-settings/design.md
+          contentHash: 3e87b77c81102b3dbedc7fb9fd5eb006ed4587e05b55e50419b5a932c9b1125f
+          submissionId: 81d4e8c5-386e-4673-82d7-5339f1803021
+      - id: p0-capabilities-settings:12
+        stepId: full.build.plan.evidence
+        sequence: 12
+        kind: classic-build-plan
+        status: resolved
+        results: {}
+        receipt:
+          ref: docs/superpowers/plans/2026-11-04-p0-capabilities-settings.md
+          contentHash: fce4d5e3822373fcd3be10aa96398e0aa4d005ab15796d6543f1f05e480925c8
+          submissionId: 901a2e76-2e20-4c2a-97bd-94bdc0fc40ba
+      - id: p0-capabilities-settings:15
+        stepId: full.build.check.evidence
+        sequence: 15
+        kind: classic-build-check
+        status: resolved
+        results: {}
+        receipt:
+          ref: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/7497d783-4df5-4f12-bf5f-c820028f41fe.log
+          contentHash: 52cb1adf8b654ddab4147f4182bfadfbfdb6ed306dcf4a551be6db754e09588a
+          submissionId: 292a00e9-c2e0-4b8f-a91a-3d93b9494db4
+      - id: p0-capabilities-settings:18
+        stepId: full.build.plan.evidence
+        sequence: 18
+        kind: classic-build-plan
+        status: resolved
+        results: {}
+        receipt:
+          ref: docs/superpowers/plans/2026-11-04-p0-capabilities-settings.md
+          contentHash: fce4d5e3822373fcd3be10aa96398e0aa4d005ab15796d6543f1f05e480925c8
+          submissionId: 4aea19ff-cb9a-4a5d-862a-54e5e8a3fbfb
+      - id: p0-capabilities-settings:23
+        stepId: full.build.check.evidence
+        sequence: 23
+        kind: classic-build-check
+        status: resolved
+        results: {}
+        receipt:
+          ref: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/700a45d8-59c9-497c-90f3-04c3d3790f03.log
+          contentHash: 0e1a243d2cd1fb98ba955f9408d17e6c9eb1811e994d1f0c6a0843442fbca2a4
+          submissionId: 50e258c0-0986-4652-86e1-2c37e4bd1aee
+      - id: p0-capabilities-settings:25
+        stepId: full.verify.report.evidence
+        sequence: 25
+        kind: classic-verification-report
+        status: resolved
+        results: {}
+        receipt:
+          ref: docs/superpowers/reports/p0-capabilities-settings.md
+          contentHash: 52a4462195f71c374231c9fb9aeb5dbde3c84e4e217292e977ac00ae2cf8ac67
+          submissionId: 7b365d6c-0cbe-4086-8d93-4099d8946874
+      - id: p0-capabilities-settings:27
+        stepId: full.verify.check.evidence
+        sequence: 27
+        kind: classic-verify-check
+        status: resolved
+        results: {}
+        receipt:
+          ref: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/59d16695-3c0b-4e05-86c3-c33dc3df11f3.log
+          contentHash: 54de48ec6357ce3f5fe80d0a1071e8238eee5e6cf7ce7125e283c260911b2373
+          submissionId: 4062fe69-903b-4ae7-b092-c5e216e56a52
+    ready: []
+    joins: {}
+    outputs: {}
+    children: []
+    lineage: []
+  sourceRevision: 51
+  sourceHash: 1eaec3ec48f3df105d9151c96b78b1fa97f5f4ac32a2f0520acc47c652281015
+  pool:
+    version: 3
+    values:
+      - event: open-complete
+      - choice: approved
+        proposal:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs:
+            full.open:
+              event: open-complete
+            full.open.evidence:
+              contentHash: 77d8c4bfd66d8bd2915d9150575c36f43477713ad8cc553c563ee1d4bb7d2bdc
+              ref: docs/openspec/changes/p0-capabilities-settings
+      - contentHash: 77d8c4bfd66d8bd2915d9150575c36f43477713ad8cc553c563ee1d4bb7d2bdc
+        ref: docs/openspec/changes/p0-capabilities-settings
+      - contentHash: 77d8c4bfd66d8bd2915d9150575c36f43477713ad8cc553c563ee1d4bb7d2bdc
+      - choice: approved
+        proposal:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs:
+            full.design.handoff:
+              handoffContext: docs/openspec/changes/p0-capabilities-settings/.comet/handoff/design-context.json
+              handoffHash: 2e6602e59599a4ecbe81faaf67e3e6d12431049cf36e3dcf5b3e1bdba181f7ad
+              proposal: 采用 CapabilityResolver + InjectionPipeline：每次运行按智能体→团队成员覆盖→全局默认解析
+                Skill/MCP，失败只影响对应能力并写诊断。Skill 存 ~/.pizza/skills，运行级物化；Claude 用
+                --plugin-dir 加载 plugin，ACP 注入清单/路径。MCP 用官方 TypeScript SDK 支持
+                stdio/SSE/HTTP，凭据 safeStorage 加密，Claude 用 --mcp-config，ACP 以
+                stdio mcpServers 注入，远程 MCP 在 ACP 不支持时标记不可用。统一
+                ApprovalService：ACP permission request + Claude PreToolUse
+                hook（临时 --settings + 本地 socket）进入同一审批对话框，允许一次/总是允许/拒绝，120
+                秒超时拒绝，FIFO 队列，危险操作默认询问。设置中心扩展默认值、数据目录迁移（复制→校验→切换→保留旧目录）、通知偏好；通知用
+                Electron Notification/托盘并支持点击定位与免打扰。i18next
+                中英文即时切换，主题/字号/密度/减少动效根属性，启动前读取避免闪烁。首次启动用
+                which/预设命令探测六种运行时，引导创建运行时/智能体/会话；electron-builder 生成未签名 macOS
+                zip/dmg，构建校验版本与许可。新增迁移
+                v5：skill、skill_binding、mcp_server、mcp_binding、approval、notification。风险：CLI
+                hook 版本差异（安全拒绝）、凭据泄漏（掩码/加密/导出白名单）、审批阻塞（超时拒绝）、i18n
+                遗漏（键扫描）、打包签名限制（未签名验收）。
+              requirementsEvidence:
+                contentHash: 3a68addcf31b3581c421198cfa8d7b3cffe82764e17573521f259e4a5d18b6f2
+                ref: docs/openspec/changes/p0-capabilities-settings
+              sourceEvidence:
+                contentHash: d9aca6db153a1f07c7c0187154dedae0a00c5dc8adcca9d1a95576b72f476b37
+                ref: docs/openspec/changes/p0-capabilities-settings
+      - handoffContext: docs/openspec/changes/p0-capabilities-settings/.comet/handoff/design-context.json
+        handoffHash: 2e6602e59599a4ecbe81faaf67e3e6d12431049cf36e3dcf5b3e1bdba181f7ad
+        proposal: 采用 CapabilityResolver + InjectionPipeline：每次运行按智能体→团队成员覆盖→全局默认解析
+          Skill/MCP，失败只影响对应能力并写诊断。Skill 存 ~/.pizza/skills，运行级物化；Claude 用
+          --plugin-dir 加载 plugin，ACP 注入清单/路径。MCP 用官方 TypeScript SDK 支持
+          stdio/SSE/HTTP，凭据 safeStorage 加密，Claude 用 --mcp-config，ACP 以 stdio
+          mcpServers 注入，远程 MCP 在 ACP 不支持时标记不可用。统一 ApprovalService：ACP permission
+          request + Claude PreToolUse hook（临时 --settings + 本地
+          socket）进入同一审批对话框，允许一次/总是允许/拒绝，120 秒超时拒绝，FIFO
+          队列，危险操作默认询问。设置中心扩展默认值、数据目录迁移（复制→校验→切换→保留旧目录）、通知偏好；通知用 Electron
+          Notification/托盘并支持点击定位与免打扰。i18next
+          中英文即时切换，主题/字号/密度/减少动效根属性，启动前读取避免闪烁。首次启动用
+          which/预设命令探测六种运行时，引导创建运行时/智能体/会话；electron-builder 生成未签名 macOS
+          zip/dmg，构建校验版本与许可。新增迁移
+          v5：skill、skill_binding、mcp_server、mcp_binding、approval、notification。风险：CLI
+          hook 版本差异（安全拒绝）、凭据泄漏（掩码/加密/导出白名单）、审批阻塞（超时拒绝）、i18n
+          遗漏（键扫描）、打包签名限制（未签名验收）。
+        requirementsEvidence:
+          contentHash: 3a68addcf31b3581c421198cfa8d7b3cffe82764e17573521f259e4a5d18b6f2
+          ref: docs/openspec/changes/p0-capabilities-settings
+        sourceEvidence:
+          contentHash: d9aca6db153a1f07c7c0187154dedae0a00c5dc8adcca9d1a95576b72f476b37
+          ref: docs/openspec/changes/p0-capabilities-settings
+      - designDoc: docs/openspec/changes/p0-capabilities-settings/design.md
+      - contentHash: 3e87b77c81102b3dbedc7fb9fd5eb006ed4587e05b55e50419b5a932c9b1125f
+        ref: docs/openspec/changes/p0-capabilities-settings/design.md
+      - boundBranch: dev
+        buildMode: autonomous
+        directOverride: false
+        isolation: current
+        reviewMode: standard
+        subagentDispatch: null
+        tddMode: tdd
+      - choice: approved
+        proposal:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs:
+            full.build.configure:
+              boundBranch: dev
+              buildMode: autonomous
+              directOverride: false
+              isolation: current
+              reviewMode: standard
+              subagentDispatch: null
+              tddMode: tdd
+      - designEvidence:
+          contentHash: 3e87b77c81102b3dbedc7fb9fd5eb006ed4587e05b55e50419b5a932c9b1125f
+          ref: docs/openspec/changes/p0-capabilities-settings/design.md
+        plan: docs/superpowers/plans/2026-11-04-p0-capabilities-settings.md
+        planEvidence:
+          contentHash: fce4d5e3822373fcd3be10aa96398e0aa4d005ab15796d6543f1f05e480925c8
+          ref: docs/superpowers/plans/2026-11-04-p0-capabilities-settings.md
+        taskRevision: b3b819d5839d07a8862ef061d27a0294eabc0e1f09d4ed12ee64a75f6eb80bfa
+      - contentHash: fce4d5e3822373fcd3be10aa96398e0aa4d005ab15796d6543f1f05e480925c8
+        ref: docs/superpowers/plans/2026-11-04-p0-capabilities-settings.md
+      - event: build-complete
+      - argv:
+          - npm
+          - run
+          - verify
+        changedDuringExecution: []
+        checkEpoch: 2
+        contentHash: 52cb1adf8b654ddab4147f4182bfadfbfdb6ed306dcf4a551be6db754e09588a
+        cwd: .
+        environment: 7a9b002e8811342893d8df46edb57c1e50400ad8c1c05fd30d88153d4ca7673f
+        exitCode: 0
+        inputAfter: c10ab04f7ea53a2faa9bf8339a53ffebabefdda5fb386a7d8be9c03731628986
+        inputBefore: c10ab04f7ea53a2faa9bf8339a53ffebabefdda5fb386a7d8be9c03731628986
+        manifestHash: af1ee4004a56841ad7f0398428ff6f95b2f8592a404c10590804afd94c98cd1f
+        manifestRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/522ce839-ff10-493c-a72b-e16478040370.manifest
+        receiptRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/7497d783-4df5-4f12-bf5f-c820028f41fe.log
+        reusable: false
+        reused: false
+        scope: build
+        tier: full
+        timeoutMs: 300000
+      - contentHash: 52cb1adf8b654ddab4147f4182bfadfbfdb6ed306dcf4a551be6db754e09588a
+        ref: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/7497d783-4df5-4f12-bf5f-c820028f41fe.log
+      - event: verify-fail
+        reason: Verify 自检发现三处规格偏差：Skill 物化失败仅记录诊断未阻止运行；被显式禁用的 MCP
+          绑定会被运行时本地同名配置重新启用；首次启动引导未自动创建首个通用助手智能体
+      - argv:
+          - npm
+          - run
+          - verify
+        changedDuringExecution: []
+        checkEpoch: 4
+        contentHash: 9bff23d95fd80431a107a7b9026d8500d59de893d1a91d033c1ddca383ff0371
+        cwd: .
+        environment: 7a9b002e8811342893d8df46edb57c1e50400ad8c1c05fd30d88153d4ca7673f
+        exitCode: 1
+        inputAfter: bd4e5941925b51cdc362d09fbd285f179e568adc670d60beb42906b5fbd891b9
+        inputBefore: bd4e5941925b51cdc362d09fbd285f179e568adc670d60beb42906b5fbd891b9
+        manifestHash: 804b146f3677d35ed09aa42ba7ddc5d84e6d57c5726b4fad7130f96dedc84a0a
+        manifestRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/3585bd65-e5ae-4355-97fa-0895ef752f29.manifest
+        receiptRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/0c02ed49-59b7-4741-8e6d-efcf8bf3cb69.log
+        reusable: false
+        reused: false
+        scope: build
+        tier: full
+        timeoutMs: 300000
+      - argv:
+          - npm
+          - run
+          - verify
+        changedDuringExecution: []
+        checkEpoch: 4
+        contentHash: 0e1a243d2cd1fb98ba955f9408d17e6c9eb1811e994d1f0c6a0843442fbca2a4
+        cwd: .
+        environment: 7a9b002e8811342893d8df46edb57c1e50400ad8c1c05fd30d88153d4ca7673f
+        exitCode: 0
+        inputAfter: 04a408fb0fbdc573a6978f8e768cfac0446af37be12d6f7a06bc5e1c2690e4b8
+        inputBefore: 04a408fb0fbdc573a6978f8e768cfac0446af37be12d6f7a06bc5e1c2690e4b8
+        manifestHash: 632a6b933572918f0b0c9b1eaae06ed54e6aab960b670334f66a22e3dfb277f6
+        manifestRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/13dd7f3e-f4ec-4cf2-bb0f-e504f3fc4452.manifest
+        receiptRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/700a45d8-59c9-497c-90f3-04c3d3790f03.log
+        reusable: false
+        reused: false
+        scope: build
+        tier: full
+        timeoutMs: 300000
+      - contentHash: 0e1a243d2cd1fb98ba955f9408d17e6c9eb1811e994d1f0c6a0843442fbca2a4
+        ref: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/700a45d8-59c9-497c-90f3-04c3d3790f03.log
+      - contentHash: 52a4462195f71c374231c9fb9aeb5dbde3c84e4e217292e977ac00ae2cf8ac67
+        ref: docs/superpowers/reports/p0-capabilities-settings.md
+      - event: verification-ready
+        verificationReport: docs/superpowers/reports/p0-capabilities-settings.md
+      - argv:
+          - npm
+          - run
+          - verify
+        changedDuringExecution: []
+        checkEpoch: 5
+        contentHash: 54de48ec6357ce3f5fe80d0a1071e8238eee5e6cf7ce7125e283c260911b2373
+        cwd: .
+        deliveryInputs: {}
+        environment: 7a9b002e8811342893d8df46edb57c1e50400ad8c1c05fd30d88153d4ca7673f
+        exitCode: 0
+        inputAfter: 04a408fb0fbdc573a6978f8e768cfac0446af37be12d6f7a06bc5e1c2690e4b8
+        inputBefore: 04a408fb0fbdc573a6978f8e768cfac0446af37be12d6f7a06bc5e1c2690e4b8
+        manifestHash: 632a6b933572918f0b0c9b1eaae06ed54e6aab960b670334f66a22e3dfb277f6
+        manifestRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/134bffbe-ebfe-4974-a0e8-e4ed909ac6cd.manifest
+        receiptRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/59d16695-3c0b-4e05-86c3-c33dc3df11f3.log
+        reusable: false
+        reused: false
+        scope: verify
+        tier: full
+        timeoutMs: 300000
+      - contentHash: 54de48ec6357ce3f5fe80d0a1071e8238eee5e6cf7ce7125e283c260911b2373
+        ref: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/59d16695-3c0b-4e05-86c3-c33dc3df11f3.log
+      - choice: local
+        proposal:
+          input:
+            change: p0-capabilities-settings
+            changeDir: docs/openspec/changes/p0-capabilities-settings
+            workspaceBaseline:
+              ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+          outputs:
+            full.archive.prepare:
+              summary: 归档 p0-capabilities-settings：66/66 任务完成，26 个测试文件 121 项通过，类型检查、构建、5 项
+                E2E、macOS dmg/zip 与真实 Claude Code 打包验收均通过；独立审查 10
+                项问题已修复。仅本地归档并提交。
+              targetBranch: dev
+      - summary: 归档 p0-capabilities-settings：66/66 任务完成，26 个测试文件 121 项通过，类型检查、构建、5 项
+          E2E、macOS dmg/zip 与真实 Claude Code 打包验收均通过；独立审查 10 项问题已修复。仅本地归档并提交。
+        targetBranch: dev
+      - baseCommit: 83e70cc736690a846ab1853ae857520cc59f05a0
+        deliveryAction: local
+        targetBranch: dev
+        verifiedBranch: dev
+      - archiveDirectory: docs/openspec/changes/archive/2026-11-04-p0-capabilities-settings
+      - sequence: 9
+        value:
+          boundBranch: dev
+          buildMode: autonomous
+          directOverride: false
+          isolation: current
+          reviewMode: standard
+          subagentDispatch: null
+          tddMode: tdd
+      - sequence: 10
+        value:
+          choice: approved
+          proposal:
+            input:
+              change: p0-capabilities-settings
+              changeDir: docs/openspec/changes/p0-capabilities-settings
+              workspaceBaseline:
+                ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+            outputs:
+              full.build.configure:
+                boundBranch: dev
+                buildMode: autonomous
+                directOverride: false
+                isolation: current
+                reviewMode: standard
+                subagentDispatch: null
+                tddMode: tdd
+      - sequence: 6
+        value:
+          choice: approved
+          proposal:
+            input:
+              change: p0-capabilities-settings
+              changeDir: docs/openspec/changes/p0-capabilities-settings
+              workspaceBaseline:
+                ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+            outputs:
+              full.design.handoff:
+                handoffContext: docs/openspec/changes/p0-capabilities-settings/.comet/handoff/design-context.json
+                handoffHash: 2e6602e59599a4ecbe81faaf67e3e6d12431049cf36e3dcf5b3e1bdba181f7ad
+                proposal: 采用 CapabilityResolver + InjectionPipeline：每次运行按智能体→团队成员覆盖→全局默认解析
+                  Skill/MCP，失败只影响对应能力并写诊断。Skill 存 ~/.pizza/skills，运行级物化；Claude 用
+                  --plugin-dir 加载 plugin，ACP 注入清单/路径。MCP 用官方 TypeScript SDK 支持
+                  stdio/SSE/HTTP，凭据 safeStorage 加密，Claude 用 --mcp-config，ACP 以
+                  stdio mcpServers 注入，远程 MCP 在 ACP 不支持时标记不可用。统一
+                  ApprovalService：ACP permission request + Claude PreToolUse
+                  hook（临时 --settings + 本地 socket）进入同一审批对话框，允许一次/总是允许/拒绝，120
+                  秒超时拒绝，FIFO
+                  队列，危险操作默认询问。设置中心扩展默认值、数据目录迁移（复制→校验→切换→保留旧目录）、通知偏好；通知用 Electron
+                  Notification/托盘并支持点击定位与免打扰。i18next
+                  中英文即时切换，主题/字号/密度/减少动效根属性，启动前读取避免闪烁。首次启动用
+                  which/预设命令探测六种运行时，引导创建运行时/智能体/会话；electron-builder 生成未签名 macOS
+                  zip/dmg，构建校验版本与许可。新增迁移
+                  v5：skill、skill_binding、mcp_server、mcp_binding、approval、notification。风险：CLI
+                  hook 版本差异（安全拒绝）、凭据泄漏（掩码/加密/导出白名单）、审批阻塞（超时拒绝）、i18n
+                  遗漏（键扫描）、打包签名限制（未签名验收）。
+                requirementsEvidence:
+                  contentHash: 3a68addcf31b3581c421198cfa8d7b3cffe82764e17573521f259e4a5d18b6f2
+                  ref: docs/openspec/changes/p0-capabilities-settings
+                sourceEvidence:
+                  contentHash: d9aca6db153a1f07c7c0187154dedae0a00c5dc8adcca9d1a95576b72f476b37
+                  ref: docs/openspec/changes/p0-capabilities-settings
+      - sequence: 7
+        value:
+          designDoc: docs/openspec/changes/p0-capabilities-settings/design.md
+      - sequence: 8
+        value:
+          contentHash: 3e87b77c81102b3dbedc7fb9fd5eb006ed4587e05b55e50419b5a932c9b1125f
+          ref: docs/openspec/changes/p0-capabilities-settings/design.md
+      - sequence: 5
+        value:
+          handoffContext: docs/openspec/changes/p0-capabilities-settings/.comet/handoff/design-context.json
+          handoffHash: 2e6602e59599a4ecbe81faaf67e3e6d12431049cf36e3dcf5b3e1bdba181f7ad
+          proposal: 采用 CapabilityResolver + InjectionPipeline：每次运行按智能体→团队成员覆盖→全局默认解析
+            Skill/MCP，失败只影响对应能力并写诊断。Skill 存 ~/.pizza/skills，运行级物化；Claude 用
+            --plugin-dir 加载 plugin，ACP 注入清单/路径。MCP 用官方 TypeScript SDK 支持
+            stdio/SSE/HTTP，凭据 safeStorage 加密，Claude 用 --mcp-config，ACP 以 stdio
+            mcpServers 注入，远程 MCP 在 ACP 不支持时标记不可用。统一 ApprovalService：ACP
+            permission request + Claude PreToolUse hook（临时 --settings + 本地
+            socket）进入同一审批对话框，允许一次/总是允许/拒绝，120 秒超时拒绝，FIFO
+            队列，危险操作默认询问。设置中心扩展默认值、数据目录迁移（复制→校验→切换→保留旧目录）、通知偏好；通知用 Electron
+            Notification/托盘并支持点击定位与免打扰。i18next
+            中英文即时切换，主题/字号/密度/减少动效根属性，启动前读取避免闪烁。首次启动用
+            which/预设命令探测六种运行时，引导创建运行时/智能体/会话；electron-builder 生成未签名 macOS
+            zip/dmg，构建校验版本与许可。新增迁移
+            v5：skill、skill_binding、mcp_server、mcp_binding、approval、notification。风险：CLI
+            hook 版本差异（安全拒绝）、凭据泄漏（掩码/加密/导出白名单）、审批阻塞（超时拒绝）、i18n
+            遗漏（键扫描）、打包签名限制（未签名验收）。
+          requirementsEvidence:
+            contentHash: 3a68addcf31b3581c421198cfa8d7b3cffe82764e17573521f259e4a5d18b6f2
+            ref: docs/openspec/changes/p0-capabilities-settings
+          sourceEvidence:
+            contentHash: d9aca6db153a1f07c7c0187154dedae0a00c5dc8adcca9d1a95576b72f476b37
+            ref: docs/openspec/changes/p0-capabilities-settings
+      - sequence: 1
+        value:
+          event: open-complete
+      - sequence: 3
+        value:
+          choice: approved
+          proposal:
+            input:
+              change: p0-capabilities-settings
+              changeDir: docs/openspec/changes/p0-capabilities-settings
+              workspaceBaseline:
+                ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+            outputs:
+              full.open:
+                event: open-complete
+              full.open.evidence:
+                contentHash: 77d8c4bfd66d8bd2915d9150575c36f43477713ad8cc553c563ee1d4bb7d2bdc
+                ref: docs/openspec/changes/p0-capabilities-settings
+      - sequence: 2
+        value:
+          contentHash: 77d8c4bfd66d8bd2915d9150575c36f43477713ad8cc553c563ee1d4bb7d2bdc
+          ref: docs/openspec/changes/p0-capabilities-settings
+      - sequence: 4
+        value:
+          contentHash: 77d8c4bfd66d8bd2915d9150575c36f43477713ad8cc553c563ee1d4bb7d2bdc
+      - sequence: 11
+        value:
+          designEvidence:
+            contentHash: 3e87b77c81102b3dbedc7fb9fd5eb006ed4587e05b55e50419b5a932c9b1125f
+            ref: docs/openspec/changes/p0-capabilities-settings/design.md
+          plan: docs/superpowers/plans/2026-11-04-p0-capabilities-settings.md
+          planEvidence:
+            contentHash: fce4d5e3822373fcd3be10aa96398e0aa4d005ab15796d6543f1f05e480925c8
+            ref: docs/superpowers/plans/2026-11-04-p0-capabilities-settings.md
+          taskRevision: b3b819d5839d07a8862ef061d27a0294eabc0e1f09d4ed12ee64a75f6eb80bfa
+      - sequence: 12
+        value:
+          contentHash: fce4d5e3822373fcd3be10aa96398e0aa4d005ab15796d6543f1f05e480925c8
+          ref: docs/superpowers/plans/2026-11-04-p0-capabilities-settings.md
+      - sequence: 13
+        value:
+          event: build-complete
+      - sequence: 14
+        value:
+          argv:
+            - npm
+            - run
+            - verify
+          changedDuringExecution: []
+          checkEpoch: 2
+          contentHash: 52cb1adf8b654ddab4147f4182bfadfbfdb6ed306dcf4a551be6db754e09588a
+          cwd: .
+          environment: 7a9b002e8811342893d8df46edb57c1e50400ad8c1c05fd30d88153d4ca7673f
+          exitCode: 0
+          inputAfter: c10ab04f7ea53a2faa9bf8339a53ffebabefdda5fb386a7d8be9c03731628986
+          inputBefore: c10ab04f7ea53a2faa9bf8339a53ffebabefdda5fb386a7d8be9c03731628986
+          manifestHash: af1ee4004a56841ad7f0398428ff6f95b2f8592a404c10590804afd94c98cd1f
+          manifestRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/522ce839-ff10-493c-a72b-e16478040370.manifest
+          receiptRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/7497d783-4df5-4f12-bf5f-c820028f41fe.log
+          reusable: false
+          reused: false
+          scope: build
+          tier: full
+          timeoutMs: 300000
+      - sequence: 15
+        value:
+          contentHash: 52cb1adf8b654ddab4147f4182bfadfbfdb6ed306dcf4a551be6db754e09588a
+          ref: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/7497d783-4df5-4f12-bf5f-c820028f41fe.log
+      - sequence: 16
+        value:
+          event: verify-fail
+          reason: Verify 自检发现三处规格偏差：Skill 物化失败仅记录诊断未阻止运行；被显式禁用的 MCP
+            绑定会被运行时本地同名配置重新启用；首次启动引导未自动创建首个通用助手智能体
+      - sequence: 17
+        value:
+          designEvidence:
+            contentHash: 3e87b77c81102b3dbedc7fb9fd5eb006ed4587e05b55e50419b5a932c9b1125f
+            ref: docs/openspec/changes/p0-capabilities-settings/design.md
+          plan: docs/superpowers/plans/2026-11-04-p0-capabilities-settings.md
+          planEvidence:
+            contentHash: fce4d5e3822373fcd3be10aa96398e0aa4d005ab15796d6543f1f05e480925c8
+            ref: docs/superpowers/plans/2026-11-04-p0-capabilities-settings.md
+          taskRevision: b3b819d5839d07a8862ef061d27a0294eabc0e1f09d4ed12ee64a75f6eb80bfa
+      - sequence: 18
+        value:
+          contentHash: fce4d5e3822373fcd3be10aa96398e0aa4d005ab15796d6543f1f05e480925c8
+          ref: docs/superpowers/plans/2026-11-04-p0-capabilities-settings.md
+      - sequence: 19
+        value:
+          event: build-complete
+      - sequence: 20
+        value:
+          argv:
+            - npm
+            - run
+            - verify
+          changedDuringExecution: []
+          checkEpoch: 4
+          contentHash: 9bff23d95fd80431a107a7b9026d8500d59de893d1a91d033c1ddca383ff0371
+          cwd: .
+          environment: 7a9b002e8811342893d8df46edb57c1e50400ad8c1c05fd30d88153d4ca7673f
+          exitCode: 1
+          inputAfter: bd4e5941925b51cdc362d09fbd285f179e568adc670d60beb42906b5fbd891b9
+          inputBefore: bd4e5941925b51cdc362d09fbd285f179e568adc670d60beb42906b5fbd891b9
+          manifestHash: 804b146f3677d35ed09aa42ba7ddc5d84e6d57c5726b4fad7130f96dedc84a0a
+          manifestRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/3585bd65-e5ae-4355-97fa-0895ef752f29.manifest
+          receiptRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/0c02ed49-59b7-4741-8e6d-efcf8bf3cb69.log
+          reusable: false
+          reused: false
+          scope: build
+          tier: full
+          timeoutMs: 300000
+      - sequence: 21
+        value:
+          event: build-complete
+      - sequence: 22
+        value:
+          argv:
+            - npm
+            - run
+            - verify
+          changedDuringExecution: []
+          checkEpoch: 4
+          contentHash: 0e1a243d2cd1fb98ba955f9408d17e6c9eb1811e994d1f0c6a0843442fbca2a4
+          cwd: .
+          environment: 7a9b002e8811342893d8df46edb57c1e50400ad8c1c05fd30d88153d4ca7673f
+          exitCode: 0
+          inputAfter: 04a408fb0fbdc573a6978f8e768cfac0446af37be12d6f7a06bc5e1c2690e4b8
+          inputBefore: 04a408fb0fbdc573a6978f8e768cfac0446af37be12d6f7a06bc5e1c2690e4b8
+          manifestHash: 632a6b933572918f0b0c9b1eaae06ed54e6aab960b670334f66a22e3dfb277f6
+          manifestRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/13dd7f3e-f4ec-4cf2-bb0f-e504f3fc4452.manifest
+          receiptRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/700a45d8-59c9-497c-90f3-04c3d3790f03.log
+          reusable: false
+          reused: false
+          scope: build
+          tier: full
+          timeoutMs: 300000
+      - sequence: 23
+        value:
+          contentHash: 0e1a243d2cd1fb98ba955f9408d17e6c9eb1811e994d1f0c6a0843442fbca2a4
+          ref: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/700a45d8-59c9-497c-90f3-04c3d3790f03.log
+      - sequence: 25
+        value:
+          contentHash: 52a4462195f71c374231c9fb9aeb5dbde3c84e4e217292e977ac00ae2cf8ac67
+          ref: docs/superpowers/reports/p0-capabilities-settings.md
+      - sequence: 24
+        value:
+          event: verification-ready
+          verificationReport: docs/superpowers/reports/p0-capabilities-settings.md
+      - sequence: 26
+        value:
+          argv:
+            - npm
+            - run
+            - verify
+          changedDuringExecution: []
+          checkEpoch: 5
+          contentHash: 54de48ec6357ce3f5fe80d0a1071e8238eee5e6cf7ce7125e283c260911b2373
+          cwd: .
+          deliveryInputs: {}
+          environment: 7a9b002e8811342893d8df46edb57c1e50400ad8c1c05fd30d88153d4ca7673f
+          exitCode: 0
+          inputAfter: 04a408fb0fbdc573a6978f8e768cfac0446af37be12d6f7a06bc5e1c2690e4b8
+          inputBefore: 04a408fb0fbdc573a6978f8e768cfac0446af37be12d6f7a06bc5e1c2690e4b8
+          manifestHash: 632a6b933572918f0b0c9b1eaae06ed54e6aab960b670334f66a22e3dfb277f6
+          manifestRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/134bffbe-ebfe-4974-a0e8-e4ed909ac6cd.manifest
+          receiptRef: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/59d16695-3c0b-4e05-86c3-c33dc3df11f3.log
+          reusable: false
+          reused: false
+          scope: verify
+          tier: full
+          timeoutMs: 300000
+      - sequence: 27
+        value:
+          contentHash: 54de48ec6357ce3f5fe80d0a1071e8238eee5e6cf7ce7125e283c260911b2373
+          ref: .comet/runtime/classic-sdk-checks/16c76f96d9807e2d2d75d376e960aa1da8a7d9941be6bdaf8d16f755974697cd/59d16695-3c0b-4e05-86c3-c33dc3df11f3.log
+      - sequence: 29
+        value:
+          choice: local
+          proposal:
+            input:
+              change: p0-capabilities-settings
+              changeDir: docs/openspec/changes/p0-capabilities-settings
+              workspaceBaseline:
+                ref: a1e91dea-6c7d-4326-acf6-d273ecf42ee6
+            outputs:
+              full.archive.prepare:
+                summary: 归档 p0-capabilities-settings：66/66 任务完成，26 个测试文件 121 项通过，类型检查、构建、5 项
+                  E2E、macOS dmg/zip 与真实 Claude Code 打包验收均通过；独立审查 10
+                  项问题已修复。仅本地归档并提交。
+                targetBranch: dev
+      - sequence: 28
+        value:
+          summary: 归档 p0-capabilities-settings：66/66 任务完成，26 个测试文件 121 项通过，类型检查、构建、5 项
+            E2E、macOS dmg/zip 与真实 Claude Code 打包验收均通过；独立审查 10 项问题已修复。仅本地归档并提交。
+          targetBranch: dev
+      - sequence: 30
+        value:
+          baseCommit: 83e70cc736690a846ab1853ae857520cc59f05a0
+          deliveryAction: local
+          targetBranch: dev
+          verifiedBranch: dev
+      - sequence: 31
+        value:
+          archiveDirectory: docs/openspec/changes/archive/2026-11-04-p0-capabilities-settings
+    nodes:
+      - key: full.open
+        value: 0
+        left: null
+        right: null
+        height: 1
+      - key: full.open.evidence
+        value: 2
+        left: null
+        right: null
+        height: 1
+      - key: full.open.confirm
+        value: 1
+        left: 0
+        right: 1
+        height: 2
+      - key: full.open.revalidate
+        value: 3
+        left: null
+        right: null
+        height: 1
+      - key: full.open.evidence
+        value: 2
+        left: null
+        right: 3
+        height: 2
+      - key: full.open.confirm
+        value: 1
+        left: 0
+        right: 4
+        height: 3
+      - key: full.design.confirm
+        value: 4
+        left: null
+        right: null
+        height: 1
+      - key: full.open
+        value: 0
+        left: null
+        right: null
+        height: 1
+      - key: full.design.handoff
+        value: 5
+        left: 6
+        right: 7
+        height: 2
+      - key: full.open.confirm
+        value: 1
+        left: 8
+        right: 4
+        height: 3
+      - key: full.design.confirm
+        value: 4
+        left: null
+        right: null
+        height: 1
+      - key: full.design.evidence
+        value: 7
+        left: null
+        right: null
+        height: 1
+      - key: full.design.document
+        value: 6
+        left: 10
+        right: 11
+        height: 2
+      - key: full.design.handoff
+        value: 5
+        left: 12
+        right: 7
+        height: 3
+      - key: full.open.confirm
+        value: 1
+        left: 13
+        right: 4
+        height: 4
+      - key: full.build.configure
+        value: 8
+        left: null
+        right: null
+        height: 1
+      - key: full.design.confirm
+        value: 4
+        left: null
+        right: null
+        height: 1
+      - key: full.build.confirm
+        value: 9
+        left: 15
+        right: 16
+        height: 2
+      - key: full.design.handoff
+        value: 5
+        left: 11
+        right: 7
+        height: 2
+      - key: full.design.document
+        value: 6
+        left: 17
+        right: 18
+        height: 3
+      - key: full.open.confirm
+        value: 1
+        left: 19
+        right: 4
+        height: 4
+      - key: full.build.plan
+        value: 10
+        left: null
+        right: null
+        height: 1
+      - key: full.design.confirm
+        value: 4
+        left: null
+        right: null
+        height: 1
+      - key: full.build.plan.evidence
+        value: 11
+        left: 21
+        right: 22
+        height: 2
+      - key: full.build.confirm
+        value: 9
+        left: 15
+        right: 23
+        height: 3
+      - key: full.open.confirm
+        value: 1
+        left: 18
+        right: 4
+        height: 3
+      - key: full.design.document
+        value: 6
+        left: 24
+        right: 25
+        height: 4
+      - key: full.build.execute
+        value: 12
+        left: null
+        right: null
+        height: 1
+      - key: full.build.confirm
+        value: 9
+        left: 15
+        right: 27
+        height: 2
+      - key: full.build.plan.evidence
+        value: 11
+        left: null
+        right: 22
+        height: 2
+      - key: full.build.plan
+        value: 10
+        left: 28
+        right: 29
+        height: 3
+      - key: full.design.document
+        value: 6
+        left: 30
+        right: 25
+        height: 4
+      - key: full.build.check
+        value: 13
+        left: null
+        right: null
+        height: 1
+      - key: full.build.configure
+        value: 8
+        left: null
+        right: null
+        height: 1
+      - key: full.build.check.evidence
+        value: 14
+        left: 32
+        right: 33
+        height: 2
+      - key: full.build.confirm
+        value: 9
+        left: 34
+        right: 27
+        height: 3
+      - key: full.build.plan
+        value: 10
+        left: 35
+        right: 29
+        height: 4
+      - key: full.design.document
+        value: 6
+        left: 36
+        right: 25
+        height: 5
+      - key: full.open.evidence
+        value: 2
+        left: null
+        right: null
+        height: 1
+      - key: full.verify.run
+        value: 15
+        left: null
+        right: null
+        height: 1
+      - key: full.open.revalidate
+        value: 3
+        left: 38
+        right: 39
+        height: 2
+      - key: full.open.confirm
+        value: 1
+        left: 18
+        right: 40
+        height: 3
+      - key: full.design.document
+        value: 6
+        left: 36
+        right: 41
+        height: 5
+      - key: full.build.check
+        value: 16
+        left: null
+        right: null
+        height: 1
+      - key: full.build.check.evidence
+        value: 14
+        left: 43
+        right: 33
+        height: 2
+      - key: full.build.confirm
+        value: 9
+        left: 44
+        right: 27
+        height: 3
+      - key: full.build.plan
+        value: 10
+        left: 45
+        right: 29
+        height: 4
+      - key: full.design.document
+        value: 6
+        left: 46
+        right: 41
+        height: 5
+      - key: full.build.check
+        value: 17
+        left: null
+        right: null
+        height: 1
+      - key: full.build.check.evidence
+        value: 18
+        left: 48
+        right: 33
+        height: 2
+      - key: full.build.confirm
+        value: 9
+        left: 49
+        right: 27
+        height: 3
+      - key: full.build.plan
+        value: 10
+        left: 50
+        right: 29
+        height: 4
+      - key: full.design.document
+        value: 6
+        left: 51
+        right: 41
+        height: 5
+      - key: full.verify.report.evidence
+        value: 19
+        left: null
+        right: null
+        height: 1
+      - key: full.verify.run
+        value: 20
+        left: 53
+        right: null
+        height: 2
+      - key: full.open.revalidate
+        value: 3
+        left: 38
+        right: 54
+        height: 3
+      - key: full.open.confirm
+        value: 1
+        left: 18
+        right: 55
+        height: 4
+      - key: full.design.document
+        value: 6
+        left: 51
+        right: 56
+        height: 5
+      - key: full.open.revalidate
+        value: 3
+        left: 38
+        right: null
+        height: 2
+      - key: full.verify.check.evidence
+        value: 22
+        left: null
+        right: null
+        height: 1
+      - key: full.verify.run
+        value: 20
+        left: null
+        right: null
+        height: 1
+      - key: full.verify.report.evidence
+        value: 19
+        left: 59
+        right: 60
+        height: 2
+      - key: full.verify.check
+        value: 21
+        left: 58
+        right: 61
+        height: 3
+      - key: full.open.confirm
+        value: 1
+        left: 18
+        right: 62
+        height: 4
+      - key: full.design.document
+        value: 6
+        left: 51
+        right: 63
+        height: 5
+      - key: full.archive.confirm
+        value: 23
+        left: null
+        right: null
+        height: 1
+      - key: full.build.check
+        value: 17
+        left: null
+        right: null
+        height: 1
+      - key: full.archive.prepare
+        value: 24
+        left: 65
+        right: 66
+        height: 2
+      - key: full.build.confirm
+        value: 9
+        left: 33
+        right: 27
+        height: 2
+      - key: full.build.check.evidence
+        value: 18
+        left: 67
+        right: 68
+        height: 3
+      - key: full.build.plan
+        value: 10
+        left: 69
+        right: 29
+        height: 4
+      - key: full.design.document
+        value: 6
+        left: 70
+        right: 63
+        height: 5
+      - key: full.archive.preflight
+        value: 25
+        left: null
+        right: null
+        height: 1
+      - key: full.archive.confirm
+        value: 23
+        left: null
+        right: 72
+        height: 2
+      - key: full.archive.prepare
+        value: 24
+        left: 73
+        right: 66
+        height: 3
+      - key: full.build.plan
+        value: 10
+        left: 68
+        right: 29
+        height: 3
+      - key: full.build.check.evidence
+        value: 18
+        left: 74
+        right: 75
+        height: 4
+      - key: full.design.document
+        value: 6
+        left: 76
+        right: 63
+        height: 5
+      - key: full.archive.confirm
+        value: 23
+        left: null
+        right: null
+        height: 1
+      - key: full.archive.preflight
+        value: 25
+        left: null
+        right: null
+        height: 1
+      - key: full.archive.execute
+        value: 26
+        left: 78
+        right: 79
+        height: 2
+      - key: full.archive.prepare
+        value: 24
+        left: 80
+        right: 66
+        height: 3
+      - key: full.build.check.evidence
+        value: 18
+        left: 81
+        right: 75
+        height: 4
+      - key: full.design.document
+        value: 6
+        left: 82
+        right: 63
+        height: 5
+      - key: full.build.configure
+        value: 27
+        left: null
+        right: null
+        height: 1
+      - key: full.design.confirm
+        value: 29
+        left: null
+        right: null
+        height: 1
+      - key: full.build.confirm
+        value: 28
+        left: 84
+        right: 85
+        height: 2
+      - key: full.design.evidence
+        value: 31
+        left: null
+        right: null
+        height: 1
+      - key: full.open
+        value: 33
+        left: null
+        right: null
+        height: 1
+      - key: full.design.handoff
+        value: 32
+        left: 87
+        right: 88
+        height: 2
+      - key: full.open.revalidate
+        value: 36
+        left: null
+        right: null
+        height: 1
+      - key: full.open.evidence
+        value: 35
+        left: null
+        right: 90
+        height: 2
+      - key: full.open.confirm
+        value: 34
+        left: 89
+        right: 91
+        height: 3
+      - key: full.design.document
+        value: 30
+        left: 86
+        right: 92
+        height: 4
+      - key: full.build.plan
+        value: 37
+        left: null
+        right: null
+        height: 1
+      - key: full.design.confirm
+        value: 29
+        left: null
+        right: null
+        height: 1
+      - key: full.build.plan.evidence
+        value: 38
+        left: 94
+        right: 95
+        height: 2
+      - key: full.build.confirm
+        value: 28
+        left: 84
+        right: 96
+        height: 3
+      - key: full.design.document
+        value: 30
+        left: 97
+        right: 92
+        height: 4
+      - key: full.build.execute
+        value: 39
+        left: null
+        right: null
+        height: 1
+      - key: full.build.confirm
+        value: 28
+        left: 84
+        right: 99
+        height: 2
+      - key: full.build.plan.evidence
+        value: 38
+        left: null
+        right: 95
+        height: 2
+      - key: full.build.plan
+        value: 37
+        left: 100
+        right: 101
+        height: 3
+      - key: full.design.document
+        value: 30
+        left: 102
+        right: 92
+        height: 4
+      - key: full.build.check
+        value: 40
+        left: null
+        right: null
+        height: 1
+      - key: full.build.configure
+        value: 27
+        left: null
+        right: null
+        height: 1
+      - key: full.build.check.evidence
+        value: 41
+        left: 104
+        right: 105
+        height: 2
+      - key: full.build.confirm
+        value: 28
+        left: 106
+        right: 99
+        height: 3
+      - key: full.build.plan
+        value: 37
+        left: 107
+        right: 101
+        height: 4
+      - key: full.design.document
+        value: 30
+        left: 108
+        right: 92
+        height: 5
+      - key: full.open.evidence
+        value: 35
+        left: null
+        right: null
+        height: 1
+      - key: full.verify.run
+        value: 42
+        left: null
+        right: null
+        height: 1
+      - key: full.open.revalidate
+        value: 36
+        left: 110
+        right: 111
+        height: 2
+      - key: full.open.confirm
+        value: 34
+        left: 89
+        right: 112
+        height: 3
+      - key: full.design.document
+        value: 30
+        left: 108
+        right: 113
+        height: 5
+      - key: full.build.plan.evidence
+        value: 44
+        left: null
+        right: 95
+        height: 2
+      - key: full.build.plan
+        value: 43
+        left: 107
+        right: 115
+        height: 4
+      - key: full.design.document
+        value: 30
+        left: 116
+        right: 113
+        height: 5
+      - key: full.build.execute
+        value: 45
+        left: null
+        right: null
+        height: 1
+      - key: full.build.confirm
+        value: 28
+        left: 106
+        right: 118
+        height: 3
+      - key: full.build.plan
+        value: 43
+        left: 119
+        right: 115
+        height: 4
+      - key: full.design.document
+        value: 30
+        left: 120
+        right: 113
+        height: 5
+      - key: full.build.check
+        value: 46
+        left: null
+        right: null
+        height: 1
+      - key: full.build.check.evidence
+        value: 41
+        left: 122
+        right: 105
+        height: 2
+      - key: full.build.confirm
+        value: 28
+        left: 123
+        right: 118
+        height: 3
+      - key: full.build.plan
+        value: 43
+        left: 124
+        right: 115
+        height: 4
+      - key: full.design.document
+        value: 30
+        left: 125
+        right: 113
+        height: 5
+      - key: full.build.execute
+        value: 47
+        left: null
+        right: null
+        height: 1
+      - key: full.build.confirm
+        value: 28
+        left: 123
+        right: 127
+        height: 3
+      - key: full.build.plan
+        value: 43
+        left: 128
+        right: 115
+        height: 4
+      - key: full.design.document
+        value: 30
+        left: 129
+        right: 113
+        height: 5
+      - key: full.build.check
+        value: 48
+        left: null
+        right: null
+        height: 1
+      - key: full.build.check.evidence
+        value: 49
+        left: 131
+        right: 105
+        height: 2
+      - key: full.build.confirm
+        value: 28
+        left: 132
+        right: 127
+        height: 3
+      - key: full.build.plan
+        value: 43
+        left: 133
+        right: 115
+        height: 4
+      - key: full.design.document
+        value: 30
+        left: 134
+        right: 113
+        height: 5
+      - key: full.verify.report.evidence
+        value: 50
+        left: null
+        right: null
+        height: 1
+      - key: full.verify.run
+        value: 51
+        left: 136
+        right: null
+        height: 2
+      - key: full.open.revalidate
+        value: 36
+        left: 110
+        right: 137
+        height: 3
+      - key: full.open.confirm
+        value: 34
+        left: 89
+        right: 138
+        height: 4
+      - key: full.design.document
+        value: 30
+        left: 134
+        right: 139
+        height: 5
+      - key: full.open.revalidate
+        value: 36
+        left: 110
+        right: null
+        height: 2
+      - key: full.verify.check.evidence
+        value: 53
+        left: null
+        right: null
+        height: 1
+      - key: full.verify.run
+        value: 51
+        left: null
+        right: null
+        height: 1
+      - key: full.verify.report.evidence
+        value: 50
+        left: 142
+        right: 143
+        height: 2
+      - key: full.verify.check
+        value: 52
+        left: 141
+        right: 144
+        height: 3
+      - key: full.open.confirm
+        value: 34
+        left: 89
+        right: 145
+        height: 4
+      - key: full.design.document
+        value: 30
+        left: 134
+        right: 146
+        height: 5
+      - key: full.archive.confirm
+        value: 54
+        left: null
+        right: null
+        height: 1
+      - key: full.build.check
+        value: 48
+        left: null
+        right: null
+        height: 1
+      - key: full.archive.prepare
+        value: 55
+        left: 148
+        right: 149
+        height: 2
+      - key: full.build.confirm
+        value: 28
+        left: 105
+        right: 127
+        height: 2
+      - key: full.build.check.evidence
+        value: 49
+        left: 150
+        right: 151
+        height: 3
+      - key: full.build.plan
+        value: 43
+        left: 152
+        right: 115
+        height: 4
+      - key: full.design.document
+        value: 30
+        left: 153
+        right: 146
+        height: 5
+      - key: full.archive.preflight
+        value: 56
+        left: null
+        right: null
+        height: 1
+      - key: full.archive.confirm
+        value: 54
+        left: null
+        right: 155
+        height: 2
+      - key: full.archive.prepare
+        value: 55
+        left: 156
+        right: 149
+        height: 3
+      - key: full.build.plan
+        value: 43
+        left: 151
+        right: 115
+        height: 3
+      - key: full.build.check.evidence
+        value: 49
+        left: 157
+        right: 158
+        height: 4
+      - key: full.design.document
+        value: 30
+        left: 159
+        right: 146
+        height: 5
+      - key: full.archive.confirm
+        value: 54
+        left: null
+        right: null
+        height: 1
+      - key: full.archive.preflight
+        value: 56
+        left: null
+        right: null
+        height: 1
+      - key: full.archive.execute
+        value: 57
+        left: 161
+        right: 162
+        height: 2
+      - key: full.archive.prepare
+        value: 55
+        left: 163
+        right: 149
+        height: 3
+      - key: full.build.check.evidence
+        value: 49
+        left: 164
+        right: 158
+        height: 4
+      - key: full.design.document
+        value: 30
+        left: 165
+        right: 146
+        height: 5
+      - key: full.open
+        value: 33
+        left: null
+        right: null
+        height: 1
+      - key: full.open.evidence
+        value: 35
+        left: null
+        right: null
+        height: 1
+      - key: full.open.confirm
+        value: 34
+        left: 167
+        right: 168
+        height: 2
+      - key: full.open.revalidate
+        value: 36
+        left: null
+        right: null
+        height: 1
+      - key: full.open.evidence
+        value: 35
+        left: null
+        right: 170
+        height: 2
+      - key: full.open.confirm
+        value: 34
+        left: 167
+        right: 171
+        height: 3
+      - key: full.design.confirm
+        value: 29
+        left: null
+        right: null
+        height: 1
+      - key: full.open
+        value: 33
+        left: null
+        right: null
+        height: 1
+      - key: full.design.handoff
+        value: 32
+        left: 173
+        right: 174
+        height: 2
+      - key: full.open.confirm
+        value: 34
+        left: 175
+        right: 171
+        height: 3
+      - key: full.design.confirm
+        value: 29
+        left: null
+        right: null
+        height: 1
+      - key: full.design.evidence
+        value: 31
+        left: null
+        right: null
+        height: 1
+      - key: full.design.document
+        value: 30
+        left: 177
+        right: 178
+        height: 2
+      - key: full.design.handoff
+        value: 32
+        left: 179
+        right: 174
+        height: 3
+      - key: full.open.confirm
+        value: 34
+        left: 180
+        right: 171
+        height: 4
+      - key: full.open.evidence
+        value: 35
+        left: null
+        right: null
+        height: 1
+      - key: full.open
+        value: 33
+        left: null
+        right: 182
+        height: 2
+      - key: full.design.handoff
+        value: 32
+        left: null
+        right: null
+        height: 1
+      - key: full.open.confirm
+        value: 34
+        left: null
+        right: null
+        height: 1
+      - key: full.open.revalidate
+        value: 36
+        left: null
+        right: null
+        height: 1
+      - key: full.open.evidence
+        value: 35
+        left: 185
+        right: 186
+        height: 2
+      - key: full.open
+        value: 33
+        left: 184
+        right: 187
+        height: 3
+      - key: full.build.configure
+        value: 27
+        left: null
+        right: null
+        height: 1
+      - key: full.design.document
+        value: 30
+        left: null
+        right: null
+        height: 1
+      - key: full.design.handoff
+        value: 32
+        left: null
+        right: null
+        height: 1
+      - key: full.design.evidence
+        value: 31
+        left: 190
+        right: 191
+        height: 2
+      - key: full.design.confirm
+        value: 29
+        left: 189
+        right: 192
+        height: 3
+      - key: full.open
+        value: 33
+        left: 193
+        right: 187
+        height: 4
+      - key: full.archive.prepare
+        value: 55
+        left: null
+        right: null
+        height: 1
+      - key: full.build.check.evidence
+        value: 49
+        left: null
+        right: null
+        height: 1
+      - key: full.build.check
+        value: 48
+        left: 195
+        right: 196
+        height: 2
+      - key: full.build.confirm
+        value: 28
+        left: null
+        right: null
+        height: 1
+      - key: full.build.plan.evidence
+        value: 44
+        left: null
+        right: null
+        height: 1
+      - key: full.build.plan
+        value: 43
+        left: null
+        right: 199
+        height: 2
+      - key: full.build.execute
+        value: 47
+        left: 198
+        right: 200
+        height: 3
+      - key: full.build.configure
+        value: 27
+        left: 197
+        right: 201
+        height: 4
+      - key: full.open.revalidate
+        value: 36
+        left: null
+        right: null
+        height: 1
+      - key: full.open.evidence
+        value: 35
+        left: 185
+        right: 203
+        height: 2
+      - key: full.verify.check.evidence
+        value: 53
+        left: null
+        right: null
+        height: 1
+      - key: full.verify.run
+        value: 51
+        left: null
+        right: null
+        height: 1
+      - key: full.verify.report.evidence
+        value: 50
+        left: 205
+        right: 206
+        height: 2
+      - key: full.verify.check
+        value: 52
+        left: 204
+        right: 207
+        height: 3
+      - key: full.open
+        value: 33
+        left: 192
+        right: 208
+        height: 4
+      - key: full.design.confirm
+        value: 29
+        left: 202
+        right: 209
+        height: 5
+      - key: full.open
+        value: 33
+        left: null
+        right: null
+        height: 1
+      - key: full.design.confirm
+        value: 29
+        left: null
+        right: null
+        height: 1
+      - key: full.design.handoff
+        value: 32
+        left: null
+        right: null
+        height: 1
+      - key: full.design.document
+        value: 30
+        left: 212
+        right: 213
+        height: 2
+      - key: full.open.confirm
+        value: 34
+        left: null
+        right: null
+        height: 1
+      - key: full.open.revalidate
+        value: 36
+        left: null
+        right: null
+        height: 1
+      - key: full.open.evidence
+        value: 35
+        left: 215
+        right: 216
+        height: 2
+      - key: full.open
+        value: 33
+        left: 214
+        right: 217
+        height: 3
+      - key: full.build.configure
+        value: 27
+        left: null
+        right: null
+        height: 1
+      - key: full.build.plan
+        value: 37
+        left: null
+        right: null
+        height: 1
+      - key: full.build.confirm
+        value: 28
+        left: 219
+        right: 220
+        height: 2
+      - key: full.design.document
+        value: 30
+        left: null
+        right: null
+        height: 1
+      - key: full.design.handoff
+        value: 32
+        left: null
+        right: null
+        height: 1
+      - key: full.design.evidence
+        value: 31
+        left: 222
+        right: 223
+        height: 2
+      - key: full.design.confirm
+        value: 29
+        left: 221
+        right: 224
+        height: 3
+      - key: full.open
+        value: 33
+        left: 225
+        right: 217
+        height: 4
+      - key: full.build.check
+        value: 40
+        left: null
+        right: null
+        height: 1
+      - key: full.build.configure
+        value: 27
+        left: 227
+        right: null
+        height: 2
+      - key: full.build.execute
+        value: 39
+        left: null
+        right: null
+        height: 1
+      - key: full.build.plan.evidence
+        value: 38
+        left: null
+        right: null
+        height: 1
+      - key: full.build.plan
+        value: 37
+        left: 229
+        right: 230
+        height: 2
+      - key: full.build.confirm
+        value: 28
+        left: 228
+        right: 231
+        height: 3
+      - key: full.open
+        value: 33
+        left: 224
+        right: 217
+        height: 3
+      - key: full.design.confirm
+        value: 29
+        left: 232
+        right: 233
+        height: 4
+      - key: full.build.check
+        value: 40
+        left: null
+        right: null
+        height: 1
+      - key: full.build.configure
+        value: 27
+        left: null
+        right: null
+        height: 1
+      - key: full.build.check.evidence
+        value: 41
+        left: 235
+        right: 236
+        height: 2
+      - key: full.build.plan
+        value: 43
+        left: 229
+        right: 230
+        height: 2
+      - key: full.build.confirm
+        value: 28
+        left: 237
+        right: 238
+        height: 3
+      - key: full.verify.run
+        value: 42
+        left: null
+        right: null
+        height: 1
+      - key: full.open.revalidate
+        value: 36
+        left: null
+        right: 240
+        height: 2
+      - key: full.open.evidence
+        value: 35
+        left: 215
+        right: 241
+        height: 3
+      - key: full.open
+        value: 33
+        left: 224
+        right: 242
+        height: 4
+      - key: full.design.confirm
+        value: 29
+        left: 239
+        right: 243
+        height: 5
+      - key: full.build.check
+        value: 48
+        left: null
+        right: null
+        height: 1
+      - key: full.build.check.evidence
+        value: 41
+        left: 245
+        right: 236
+        height: 2
+      - key: full.build.execute
+        value: 47
+        left: null
+        right: null
+        height: 1
+      - key: full.build.plan.evidence
+        value: 44
+        left: null
+        right: null
+        height: 1
+      - key: full.build.plan
+        value: 43
+        left: 247
+        right: 248
+        height: 2
+      - key: full.build.confirm
+        value: 28
+        left: 246
+        right: 249
+        height: 3
+      - key: full.design.confirm
+        value: 29
+        left: 250
+        right: 243
+        height: 5
+      - key: full.build.check.evidence
+        value: 49
+        left: 245
+        right: 236
+        height: 2
+      - key: full.build.confirm
+        value: 28
+        left: 252
+        right: 249
+        height: 3
+      - key: full.verify.run
+        value: 51
+        left: null
+        right: null
+        height: 1
+      - key: full.open.revalidate
+        value: 36
+        left: null
+        right: 254
+        height: 2
+      - key: full.open.evidence
+        value: 35
+        left: 215
+        right: 255
+        height: 3
+      - key: full.open
+        value: 33
+        left: 224
+        right: 256
+        height: 4
+      - key: full.design.confirm
+        value: 29
+        left: 253
+        right: 257
+        height: 5
+      - key: full.open.revalidate
+        value: 36
+        left: null
+        right: null
+        height: 1
+      - key: full.open.evidence
+        value: 35
+        left: 215
+        right: 259
+        height: 2
+      - key: full.verify.report.evidence
+        value: 50
+        left: null
+        right: null
+        height: 1
+      - key: full.verify.run
+        value: 51
+        left: 261
+        right: null
+        height: 2
+      - key: full.verify.check
+        value: 52
+        left: 260
+        right: 262
+        height: 3
+      - key: full.open
+        value: 33
+        left: 224
+        right: 263
+        height: 4
+      - key: full.design.confirm
+        value: 29
+        left: 253
+        right: 264
+        height: 5
+    maps:
+      - null
+      - 2
+      - 5
+      - 9
+      - 14
+      - 20
+      - 26
+      - 31
+      - 37
+      - 42
+      - 47
+      - 52
+      - 57
+      - 64
+      - 71
+      - 77
+      - 83
+      - 93
+      - 98
+      - 103
+      - 109
+      - 114
+      - 117
+      - 121
+      - 126
+      - 130
+      - 135
+      - 140
+      - 147
+      - 154
+      - 160
+      - 166
+      - 169
+      - 172
+      - 176
+      - 181
+      - 183
+      - 188
+      - 194
+      - 210
+      - 211
+      - 218
+      - 226
+      - 234
+      - 244
+      - 251
+      - 258
+      - 265
+    bindings:
+      - path:
+          - actions
+          - "0"
+          - input
+          - outputs
+        map: 0
+      - path:
+          - actions
+          - "1"
+          - input
+          - outputs
+        map: 1
+      - path:
+          - actions
+          - "2"
+          - input
+          - outputs
+        map: 2
+      - path:
+          - actions
+          - "3"
+          - input
+          - outputs
+        map: 3
+      - path:
+          - actions
+          - "4"
+          - input
+          - outputs
+        map: 4
+      - path:
+          - actions
+          - "5"
+          - input
+          - outputs
+        map: 5
+      - path:
+          - actions
+          - "6"
+          - input
+          - outputs
+        map: 6
+      - path:
+          - actions
+          - "7"
+          - input
+          - outputs
+        map: 7
+      - path:
+          - actions
+          - "8"
+          - input
+          - outputs
+        map: 8
+      - path:
+          - actions
+          - "9"
+          - input
+          - outputs
+        map: 9
+      - path:
+          - actions
+          - "10"
+          - input
+          - outputs
+        map: 9
+      - path:
+          - actions
+          - "11"
+          - input
+          - outputs
+        map: 9
+      - path:
+          - actions
+          - "12"
+          - input
+          - outputs
+        map: 10
+      - path:
+          - actions
+          - "13"
+          - input
+          - outputs
+        map: 10
+      - path:
+          - actions
+          - "14"
+          - input
+          - outputs
+        map: 11
+      - path:
+          - actions
+          - "15"
+          - input
+          - outputs
+        map: 12
+      - path:
+          - actions
+          - "16"
+          - input
+          - outputs
+        map: 13
+      - path:
+          - actions
+          - "17"
+          - input
+          - outputs
+        map: 14
+      - path:
+          - actions
+          - "18"
+          - input
+          - outputs
+        map: 15
+      - path:
+          - actions
+          - "19"
+          - input
+          - outputs
+        map: 16
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:1
+          - results
+        map: 0
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:11
+          - results
+        map: 17
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:13
+          - results
+        map: 18
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:14
+          - results
+        map: 19
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:16
+          - results
+        map: 20
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:17
+          - results
+        map: 21
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:19
+          - results
+        map: 22
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:20
+          - results
+        map: 23
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:21
+          - results
+        map: 24
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:22
+          - results
+        map: 25
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:24
+          - results
+        map: 26
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:26
+          - results
+        map: 27
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:28
+          - results
+        map: 28
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:30
+          - results
+        map: 29
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:31
+          - results
+        map: 30
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:32
+          - results
+        map: 31
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:4
+          - results
+        map: 32
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:5
+          - results
+        map: 33
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:7
+          - results
+        map: 34
+      - path:
+          - actionContexts
+          - p0-capabilities-settings:9
+          - results
+        map: 35
+      - path:
+          - outputs
+        map: 31
+      - path:
+          - waits
+          - "0"
+          - results
+        map: 36
+      - path:
+          - waits
+          - "1"
+          - results
+        map: 37
+      - path:
+          - waits
+          - "2"
+          - results
+        map: 38
+      - path:
+          - waits
+          - "3"
+          - results
+        map: 39
+      - path:
+          - evidenceWaits
+          - "0"
+          - results
+        map: 40
+      - path:
+          - evidenceWaits
+          - "1"
+          - results
+        map: 41
+      - path:
+          - evidenceWaits
+          - "2"
+          - results
+        map: 42
+      - path:
+          - evidenceWaits
+          - "3"
+          - results
+        map: 43
+      - path:
+          - evidenceWaits
+          - "4"
+          - results
+        map: 44
+      - path:
+          - evidenceWaits
+          - "5"
+          - results
+        map: 45
+      - path:
+          - evidenceWaits
+          - "6"
+          - results
+        map: 46
+      - path:
+          - evidenceWaits
+          - "7"
+          - results
+        map: 47
+  storageHash: a52497beda40c5a952092137f1676bab1d06a970c95bcbc08bc2c71dfea82a6e
+check_epoch: 8
