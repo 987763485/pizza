@@ -13,7 +13,7 @@ coverage/
 test-results/
 playwright-report/
 .vitest/
-
+.codegraph/
 # 运行时与本地数据
 .pizza/
 *.log
@@ -38,6 +38,12 @@ Thumbs.db
 
 # 原型导出物
 prototype/screenshots/
+
+# electron-builder 产物
+release/
+
+# 确定性 E2E 运行时在仓库根目录写出的产出物
+/fake-artifact.md
 # >>> Comet managed project state >>>
 !/.comet/
 /.comet/*
@@ -59,13 +65,6 @@ prototype/screenshots/
 **/.comet/checks
 **/.comet/coordination.json
 **/.comet/subagent-progress.md
-.comet-state.lock/
 .comet-state.lock
 .comet-state-transaction.json
 # <<< Comet managed project state <<<
-
-# electron-builder 产物
-release/
-
-# 确定性 E2E 运行时在仓库根目录写出的产出物
-/fake-artifact.md

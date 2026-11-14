@@ -58,8 +58,40 @@
     })
   }
 
+  let pinnedTarget = null
+  let pinTimeout = 0
+  let releaseTimeout = 0
+
+  function releasePin() {
+    pinnedTarget = null
+    window.clearTimeout(pinTimeout)
+    window.clearTimeout(releaseTimeout)
+  }
+
+  function pinTarget(id) {
+    pinnedTarget = id
+    setActive(id)
+    window.clearTimeout(pinTimeout)
+    window.clearTimeout(releaseTimeout)
+    pinTimeout = window.setTimeout(releasePin, 1600)
+    if ('onscrollend' in window) {
+      window.addEventListener(
+        'scrollend',
+        function () {
+          releaseTimeout = window.setTimeout(releasePin, 120)
+        },
+        { once: true },
+      )
+    }
+  }
+
   function updateScrollState() {
     if (!sections.length) return
+    if (pinnedTarget) {
+      setActive(pinnedTarget)
+      if (toTop) toTop.classList.toggle('visible', window.scrollY > 720)
+      return
+    }
     const atBottom =
       Math.ceil(window.innerHeight + window.scrollY) >=
       document.documentElement.scrollHeight - 2
@@ -88,6 +120,21 @@
     { passive: true },
   )
   updateScrollState()
+
+  sectionLinks.concat(tocLinks).forEach(function (link) {
+    link.addEventListener('click', function () {
+      const href = link.getAttribute('href') || ''
+      if (href.length < 2) return
+      const id = decodeURIComponent(href.slice(1))
+      if (!document.getElementById(id)) return
+      pinTarget(id)
+    })
+  })
+
+  const manualScrollEvents = ['wheel', 'touchstart', 'pointerdown']
+  manualScrollEvents.forEach(function (name) {
+    window.addEventListener(name, releasePin, { passive: true })
+  })
 
   if (toTop) {
     toTop.addEventListener('click', function () {

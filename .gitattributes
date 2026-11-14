@@ -1,0 +1,15 @@
+*.css linguist-detectable=false
+*.html linguist-detectable=false
+*.js linguist-language=Typescript
+
+.claude/**         merge=ours
+.comet/**          merge=ours
+.codegraph/**      merge=ours
+.impeccable/**     merge=ours
+.vitest/**         merge=ours
+docs/**            merge=ours
+AGENTS.md          merge=ours
+CLAUDE.md          merge=ours
+.superpowers/**    merge=ours
+docs/index.html    -merge
+docs/assets/**    -merge
